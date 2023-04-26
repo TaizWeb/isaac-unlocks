@@ -56,14 +56,8 @@ quality.addEventListener("change", (event) => {
 	renderItems();
 });
 
-/*
-bossClears.clearSatan.addEventListener("change", (event) => {
-	currentBoss["Satan"] = event.target.value;
-});
-*/
-
+// Adding a listener for every boss checkbox
 for (let _boss in bossClears) {
-	//console.log(bossClears[_boss])
 	bossClears[_boss].addEventListener("change", (event) => {
 		currentBoss[bossHTMLtoJS[bossClears[_boss].name]] = event.target.checked;
 		console.log(bossClears[_boss].name + " is set to " + event.target.checked);
@@ -74,10 +68,31 @@ for (let _boss in bossClears) {
 // itemBuilder: Creates and returns an item node that will then be used in renderItems
 function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	let itemNode = document.createElement("div");
+	// Name
 	let nameNode = document.createElement("p");
 	let _name = document.createTextNode(name);
 	nameNode.appendChild(_name);
+
+	// Pickup
+	let pickupNode = document.createElement("p");
+	let _pickup = document.createTextNode(pickup);
+	pickupNode.appendChild(_pickup);
+	
+	// Description
+	let descNode = document.createElement("p");
+	let _desc = document.createTextNode(moreDesc);
+	descNode.appendChild(_desc);
+
+	// Unlock
+	let unlockNode = document.createElement("p");
+	let _unlock = document.createTextNode(unlock);
+	unlockNode.appendChild(_unlock);
+
+	// Appending them all to itemNode and returning it
 	itemNode.appendChild(nameNode);
+	itemNode.appendChild(pickupNode);
+	itemNode.appendChild(descNode);
+	itemNode.appendChild(unlockNode);
 	return itemNode;
 }
 
@@ -85,8 +100,10 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 function renderItems() {
 	itemsContainer.innerHTML = "";
 	for (let item in Isaac.actives) {
-		if (checkQuality(item) && checkBosses(item))
-			itemsContainer.appendChild(itemBuilder(Isaac.actives[item].name, "","","","",""));
+		if (checkQuality(item) && checkBosses(item)) {
+			let itemInfo = Isaac.actives[item];
+			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
+		}
 	}
 }
 
