@@ -164,27 +164,36 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 function renderItems() {
 	itemsContainer.innerHTML = "";
 	for (let item in Isaac.actives) {
-		if (checkQuality(item) && checkBosses(item)) {
+		if (checkQuality(item, Isaac.actives) && checkBosses(item, Isaac.actives)) {
 			let itemInfo = Isaac.actives[item];
+			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
+		}
+	}
+	// Render trinkets
+	let splitter = document.createElement("hr");
+	itemsContainer.appendChild(splitter);
+	for (let item in Isaac.trinkets) {
+		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets)) {
+			let itemInfo = Isaac.trinkets[item];
 			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
 	}
 }
 
 // checkQuality: Returns if $item is equal to or greater than the current selected quality slider
-function checkQuality(item) {
-	if (Isaac.actives[item].quality == "NA") return false;
-	else return (parseInt(Isaac.actives[item].quality.split(" ")[1]) >= currentQuality)
+function checkQuality(item, source) {
+	if (source[item].quality == "NA") return false;
+	else return (parseInt(source[item].quality.split(" ")[1]) >= currentQuality)
 }
 
 // checkBosses: Returns if any of the currently active boss checkboxes are involved in the unlock of $item
-function checkBosses(item) {
-	if (Isaac.actives[item].unlock.search("Unlock") < 0) return false;
+function checkBosses(item, source) {
+	if (source[item].unlock.search("Unlock") < 0) return false;
 	for (let boss in currentBoss) {
 		if (currentBoss[boss]) {
 			console.log(boss);
-			if ((Isaac.actives[item].unlock.indexOf("beating " + boss) > 0) ||
-				 (Isaac.actives[item].unlock.indexOf("defeating " + boss) > 0)) return true;
+			if ((source[item].unlock.indexOf("beating " + boss) > 0) ||
+				 (source[item].unlock.indexOf("defeating " + boss) > 0)) return true;
 		}
 	}
 	return false;
