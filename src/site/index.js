@@ -19,9 +19,9 @@ const bossClears = {
 }
 const currentBoss = {
 	"Satan": false,
-	"Lamb": false,
+	"The Lamb": false,
 	"Isaac": false,
-	"Blue Baby": false,
+	"???": false,
 	"Mega Satan": false,
 	"Hush": false,
 	"Boss Rush": false,
@@ -29,14 +29,14 @@ const currentBoss = {
 	"Delirium": false,
 	"Greed": false,
 	"Greedier": false,
-	"Beast": false,
-	"Heart": false
+	"The Beast": false,
+	"Mom's Heart": false
 }
 const bossHTMLtoJS = {
 	"boss_satan": "Satan",
-	"boss_lamb": "Lamb",
+	"boss_lamb": "The Lamb",
 	"boss_isaac": "Isaac",
-	"boss_bluebaby": "Blue Baby",
+	"boss_bluebaby": "???",
 	"boss_megasatan": "Mega Satan",
 	"boss_hush": "Hush",
 	"boss_bossrush": "Boss Rush",
@@ -44,8 +44,8 @@ const bossHTMLtoJS = {
 	"boss_delirium": "Delirium",
 	"boss_greed": "Greed",
 	"boss_greedier": "Greedier",
-	"boss_beast": "Beast",
-	"boss_heart": "Heart"
+	"boss_beast": "The Beast",
+	"boss_heart": "Mom's Heart"
 }
 
 let currentQuality = 0;
@@ -79,7 +79,7 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	let pickupNode = document.createElement("p");
 	let _pickup = document.createTextNode(pickup);
 	pickupNode.appendChild(_pickup);
-	
+
 	// Description
 	/*let descNode = document.createElement("p");
 	let _desc = document.createTextNode(moreDesc);
@@ -183,7 +183,8 @@ function checkBosses(item) {
 	for (let boss in currentBoss) {
 		if (currentBoss[boss]) {
 			console.log(boss);
-			if (Isaac.actives[item].unlock.search(boss) > 0) return true;
+			if ((Isaac.actives[item].unlock.indexOf("beating " + boss) > 0) ||
+				 (Isaac.actives[item].unlock.indexOf("defeating " + boss) > 0)) return true;
 		}
 	}
 	return false;
