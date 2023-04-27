@@ -5750,13 +5750,15 @@ var Isaac = {
       "name": "Swallowed Penny",
       "itemid": "TrinketID: 1",
       "pickup": "\"Gulp!\"",
+			"quality": "Quality: 3",
       "moreDesc": "Each time you get hit, you drop a coin or two\n* , the lost item pool, cent, gold, water, wet, blue\n",
       "unlock": "UNLOCK: Unlock this item by beating Challenge #15 (Slow Roll)"
     },
     "Petrified Poop": {
       "name": "Petrified Poop",
-      "itemid": "TrinketID: 2",
+      "itemid": "TrinketID: 3",
       "pickup": "\"It feels lucky?\"",
+			"quality": "Quality: 2",
       "moreDesc": "While held, Isaac has a significantly higher chance to find drops when breaking poops\n*, grey, gray \n",
       "unlock": "Available from the start"
     },
@@ -5764,6 +5766,7 @@ var Isaac = {
       "name": "AAA Battery",
       "itemid": "TrinketID: 3",
       "pickup": "\"Trickle charge\"",
+			"quality": "Quality: 2",
       "moreDesc": "Lowers your spacebar item charge rate by 1\nCannot lower the charge of your spacebar item below 1 room\nFor example, you will now be able to use a 3 room charge item after 2 rooms instead\n*, bullet, grey, gray, yellow \n",
       "unlock": "Available from the start"
     },
@@ -5771,6 +5774,7 @@ var Isaac = {
       "name": "Broken Remote",
       "itemid": "TrinketID: 4",
       "pickup": "\"It's broken\"",
+			"quality": "Quality: 0",
       "moreDesc": "Does the teleport effect every time you use your current spacebar item\nCan be used infinitely every room if you have Guppy's Paw and no red heart containers (Can be exploited to get to the boss room without clearing any other rooms)\n*, joystick, grey, gray \n",
       "unlock": "Available from the start"
     },
@@ -5778,6 +5782,7 @@ var Isaac = {
       "name": "Purple Heart",
       "itemid": "TrinketID: 5",
       "pickup": "\"Challenge up\"",
+			"quality": "Quality: 0",
       "moreDesc": "Higher chance for champion enemies while held\n* \n",
       "unlock": "Available from the start"
     },
@@ -5785,6 +5790,7 @@ var Isaac = {
       "name": "Broken Magnet",
       "itemid": "TrinketID: 6",
       "pickup": "\"It kinda works\"",
+			"quality": "Quality: 2",
       "moreDesc": "Has a partial Magneto effect and will attract coins, pulling them into Isaac from a distance\nDoes not attract other pickups like the full Magneto item does\n*, red \n",
       "unlock": "Available from the start"
     },
@@ -5792,6 +5798,7 @@ var Isaac = {
       "name": "Rosary Bead",
       "itemid": "TrinketID: 7",
       "pickup": "\"Faith up\"",
+			"quality": "Quality: 4",
       "moreDesc": "Increases your chances to find an Angel Room instead of a Devil Room\nNormally there is a 50%/50% chance of a Angel or Devil room with if a door spawns after the boss. The Rosary Bead changes this to a 75%/25% chance of an angel or devil room (respectively)\n*, red, black, circle \n",
       "unlock": "Available from the start"
     },
@@ -5799,6 +5806,7 @@ var Isaac = {
       "name": "Cartridge",
       "itemid": "TrinketID: 8",
       "pickup": "\"I remember these\"",
+			"quality": "Quality: 2",
       "moreDesc": "When Isaac takes damage, there is a chance he will gain the Gamekid effect, turning him invincible and dealing contact damage to any enemies he touches\nThe chance to activate the invincibility effect is affected by your luck stat and at +38 Luck it will activate every time you get hit\n* , the lost item pool, nes, game, grey, gray\n",
       "unlock": "Available from the start"
     },
@@ -5806,6 +5814,7 @@ var Isaac = {
       "name": "Pulse Worm",
       "itemid": "TrinketID: 9",
       "pickup": "\"Wub wub!\"",
+			"quality": "Quality: 1",
       "moreDesc": "Tears shrink and grow in size as they go across the room\nDoes not appear to affect your damage and only the hitbox size of tears\n*, white, lump \n",
       "unlock": "Available from the start"
     },
@@ -5813,6 +5822,7 @@ var Isaac = {
       "name": "Wiggle Worm",
       "itemid": "TrinketID: 10",
       "pickup": "\"Wiggle wiggle!\"",
+			"quality": "Quality: 3",
       "moreDesc": "Tears now move in a wave fashion across the room\nGrants spectral tears\n+0.4 Tears up\n*, white, s, snake \n",
       "unlock": "Available from the start"
     },
@@ -5820,6 +5830,7 @@ var Isaac = {
       "name": "Ring Worm",
       "itemid": "TrinketID: 11",
       "pickup": "\"Woop woop!\"",
+			"quality": "Quality: 0",
       "moreDesc": "While held, tears move in a spiral pattern across the screen at high speed\nGrants spectral tears\n+0.4 Tears up\nEffectively increases your range due to the tear pattern\n*, white, circle, snake \n",
       "unlock": "Available from the start"
     },
@@ -5827,6 +5838,7 @@ var Isaac = {
       "name": "Flat Worm",
       "itemid": "TrinketID: 12",
       "pickup": "\"Blub blub!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Tears become flat and disc shaped giving them a larger hitbox\nHigher knockback effect with your tears\n*, grey, gray, eyes \n",
       "unlock": "Available from the start"
     },
@@ -5834,6 +5846,7 @@ var Isaac = {
       "name": "Store Credit",
       "itemid": "TrinketID: 13",
       "pickup": "\"YES!\"",
+			"quality": "Quality: 2",
       "moreDesc": "While this trinket is held, all items in the Shop cost 0 coins\nAfter buying any 0 cent item in the Shop, the trinket disappears\n*, grey, gray, dollar, bill, note, cash, money \n",
       "unlock": "UNLOCK: Unlock this item by beating the Chest with Lazarus"
     },
@@ -5841,6 +5854,7 @@ var Isaac = {
       "name": "Callus",
       "itemid": "TrinketID: 14",
       "pickup": "\"Your feet feel stronger\"",
+			"quality": "Quality: 2",
       "moreDesc": "Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held\n* , the lost item pool, brown, pink, lump, ball, spot\n",
       "unlock": "Available from the start"
     },
@@ -5848,6 +5862,7 @@ var Isaac = {
       "name": "Lucky Rock",
       "itemid": "TrinketID: 15",
       "pickup": "\"There's something inside\"",
+			"quality": "Quality: 2",
       "moreDesc": "33% chance to drop a coin for every rock that you destroy\n*, grey, gray, stone, square \n",
       "unlock": "UNLOCK: Unlock this item by destroying 100 rocks"
     },
@@ -5855,6 +5870,7 @@ var Isaac = {
       "name": "Mom's Toenail",
       "itemid": "TrinketID: 16",
       "pickup": "\"???\"",
+			"quality": "Quality: 0",
       "moreDesc": "Mom's Leg will now appear every 20 seconds and stomp down randomly in the room dealing 300 damage to enemies\nBe warned though, Mom's leg can also stomp and hurt Isaac too!\n*, mustache, moustache, white, yellow, moms toenail\n",
       "unlock": "Available from the start"
     },
@@ -5862,6 +5878,7 @@ var Isaac = {
       "name": "Black Lipstick",
       "itemid": "TrinketID: 17",
       "pickup": "\"Evil up\"",
+			"quality": "Quality: 0",
       "moreDesc": "Increases the chance for Black hearts to spawn\n* , the lost item pool, grey, gray, makeup\n",
       "unlock": "UNLOCK: Unlock this item by beating the Dark Room with Eve"
     },
@@ -5869,6 +5886,7 @@ var Isaac = {
       "name": "Bible Tract",
       "itemid": "TrinketID: 18",
       "pickup": "\"Faith up\"",
+			"quality": "Quality: 2",
       "moreDesc": "Gives you a higher chance of eternal hearts\nContrary to popular belief, the Bible Tract doesn't allow Angel Rooms to appear after paying for a Devil Deal\n* , the lost item pool, grey, gray, black, book\n",
       "unlock": "Available from the start"
     },
@@ -5876,6 +5894,7 @@ var Isaac = {
       "name": "Paper Clip",
       "itemid": "TrinketID: 19",
       "pickup": "\"Master of lockpicking\"",
+			"quality": "Quality: 3",
       "moreDesc": "Allows you to unlock golden chests without needing a key\nDoes not work on locked rooms\nCain starts with this trinket after donating 68 coins to the Greed Donation Machine\n* starting, grey, gray, metal, wire\n",
       "unlock": "Available from the start"
     },
@@ -5883,6 +5902,7 @@ var Isaac = {
       "name": "Monkey Paw",
       "itemid": "TrinketID: 20",
       "pickup": "\"Wish granted\"",
+			"quality": "Quality: 3",
       "moreDesc": "When you reach half a heart of life remaining, a black heart will spawn\nAfter three black hearts have spawned, the trinket dissapears\n* , the lost item pool, hand, brown, monkeys paw, monkey's paw\n",
       "unlock": "Available from the start"
     },
@@ -5890,6 +5910,7 @@ var Isaac = {
       "name": "Mysterious Paper",
       "itemid": "TrinketID: 21",
       "pickup": "\"???\"",
+			"quality": "Quality: 2",
       "moreDesc": "Imitates the behaviours of some of the other 'paper' items/trinkets\nA Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect\nHas a chance to trigger the Polaroid or Negative effect every time you take damage with half a red heart or less\nMissing Poster: Dying in a sacrifice room while holding this trinket will reveal a puzzle piece on the death screen. Finding all the puzzle pieces will help you to reveal the final secret, unlocking the hidden character 'The Lost'\nIf held when you touch the chest after the Satan or Isaac fight and you don't have the relevant item to go to the next floor (Polaroid or Negative), you have a small chance to be taken there anyway\n*, white, grey, gray, page \n",
       "unlock": "UNLOCK: Unlock this item by beating the Chest with Eden"
     },
@@ -5897,6 +5918,7 @@ var Isaac = {
       "name": "Daemon's Tail",
       "itemid": "TrinketID: 22",
       "pickup": "\"Evil up\"",
+			"quality": "Quality: 2",
       "moreDesc": "80% of heart drops are replaced with keys\nHearts turn into black hearts where possible. This doesn't convert hearts that dropped before picking up this trinket, and doesn't apply to set heart drops, i.e. the eternal hearts that drop in angel themed super secret rooms\nAll heart drops from Ace of Hearts will be Black Hearts\n*, black, devil, pointy, daemons tail, demons tail, demon tail\n",
       "unlock": "UNLOCK: Unlock this item by beating Satan with Azazel"
     },
@@ -5904,6 +5926,7 @@ var Isaac = {
       "name": "Missing Poster",
       "itemid": "TrinketID: 23",
       "pickup": "\"???\"",
+			"quality": "Quality: 0",
       "moreDesc": "Dying in a sacrifice room while holding this trinket will unlock The Lost character\nAfter The Lost is unlocked, dying anywhere with this trinket will bring you back to life as The Lost and the trinket will be deleted\nWhen playing as Tainted Lost, you don't swap to being regular Lost, it simply acts as an extra life\n*, page, paper, isaac, white, writing \n",
       "unlock": "UNLOCK: Unlock this item by beating Dark Room with Isaac"
     },
@@ -5911,6 +5934,7 @@ var Isaac = {
       "name": "Butt Penny",
       "itemid": "TrinketID: 24",
       "pickup": "\"Wealth of gas\"",
+			"quality": "Quality: 2",
       "moreDesc": "Everytime you pick up a coin, you fart, inflicting poison damage to nearby enemies\nGreatly increases the chance of coins dropping from poops\n*, brown, orange, flat \n",
       "unlock": "Available from the start"
     },
@@ -5918,6 +5942,7 @@ var Isaac = {
       "name": "Mysterious Candy",
       "itemid": "TrinketID: 25",
       "pickup": "\"Uh-oh!\"",
+			"quality": "Quality: 4",
       "moreDesc": "Causes Isaac to create poops randomly\n*, chocolate, brown, rectangle \n",
       "unlock": "Available from the start"
     },
@@ -5925,6 +5950,7 @@ var Isaac = {
       "name": "Hook Worm",
       "itemid": "TrinketID: 26",
       "pickup": "\"Zip zoop!\"",
+			"quality": "Quality: 0",
       "moreDesc": "Tears now move forwards at right angles, shifting left and right across the room\n+0.4 Tears up\nGrants spectral tears\nIncreases your range stat by +10.0 while held but due to the fire pattern, your tears travel a similar distance to normal\n*, white, snake, square\n",
       "unlock": "Available from the start"
     },
@@ -5932,6 +5958,7 @@ var Isaac = {
       "name": "Whip Worm",
       "itemid": "TrinketID: 27",
       "pickup": "\"Wooosh!\"",
+			"quality": "Quality: 3",
       "moreDesc": "+0.5 Shot Speed Up\nYour tears now whip across the room at a very high shot speed\nShot speed gives your tears more effective range, but doesn't increase your range stat directly\n*, snake, white \n",
       "unlock": "Available from the start"
     },
@@ -5939,6 +5966,7 @@ var Isaac = {
       "name": "Broken Ankh",
       "itemid": "TrinketID: 28",
       "pickup": "\"Eternal life?\"",
+			"quality": "Quality: 0",
       "moreDesc": "Has a 22.22% chance to respawn with 3 Soul hearts as Blue Baby when you die\n*, ank, grey, gray \n",
       "unlock": "UNLOCK: Unlock this item by beating Satan with Lazarus"
     },
@@ -5946,6 +5974,7 @@ var Isaac = {
       "name": "Fish Head",
       "itemid": "TrinketID: 29",
       "pickup": "\"It stinks\"",
+			"quality": "Quality: 0",
       "moreDesc": "Everytime Isaac takes damage, one blue fly will spawn\n* , the lost item pool, green, red, bloody, dead\n",
       "unlock": "Available from the start"
     },
@@ -5953,6 +5982,7 @@ var Isaac = {
       "name": "Pinky Eye",
       "itemid": "TrinketID: 30",
       "pickup": "\"Poison shots\"",
+			"quality": "Quality: 3",
       "moreDesc": "Isaac's tears have a chance to poison enemies\nThe poison effect leaves a damage over time, which deals 4 or 6 damage per tick\nThe chance to poison enemies is affected by your luck stat and at +18 Luck it will activate every time\n*, red \n",
       "unlock": "Available from the start"
     },
@@ -5960,6 +5990,7 @@ var Isaac = {
       "name": "Push Pin",
       "itemid": "TrinketID: 31",
       "pickup": "\"Piercing shots\"",
+			"quality": "Quality: 0",
       "moreDesc": "Isaac now has a chance to make a spectral and piercing tear\nThe chance to fire a piercing tear is affected by your luck stat and at +18 Luck it will activate every time\n*, blue\n",
       "unlock": "Available from the start"
     },
@@ -5967,6 +5998,7 @@ var Isaac = {
       "name": "Liberty Cap",
       "itemid": "TrinketID: 32",
       "pickup": "\"Touch fuzzy, get dizzy!\"",
+			"quality": "Quality: 2",
       "moreDesc": "While held, this trinket gives a random mushroom effect each room\nPossible mushrooms include: Mini Mush, Odd Mushroom (Thin), Odd Mushroom (Thick), The Compass\n*, ping, pong, paddle, grey, gray, mushroom\n",
       "unlock": "Available from the start"
     },
@@ -5974,6 +6006,7 @@ var Isaac = {
       "name": "Umbilical Cord",
       "itemid": "TrinketID: 33",
       "pickup": "\"Fetal protection\"",
+			"quality": "Quality: 1",
       "moreDesc": "While at 1/2 a red heart of health, you gain a Little Steve familiar that follows you and shoots homing tears\n*, the lost item pool, pink, red, guts, intestine, tube\n",
       "unlock": "Available from the start"
     },
@@ -5981,6 +6014,7 @@ var Isaac = {
       "name": "Child's Heart",
       "itemid": "TrinketID: 34",
       "pickup": "\"It calls out to its brothers\"",
+			"quality": "Quality: 2",
       "moreDesc": "Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests\n* , the lost item pool, red, purple, childs heart, child heart \n",
       "unlock": "Available from the start"
     },
@@ -5988,6 +6022,7 @@ var Isaac = {
       "name": "Curved Horn",
       "itemid": "TrinketID: 35",
       "pickup": "\"DMG up\"",
+			"quality": "Quality: 4",
       "moreDesc": "+2 Damage Up\n*, pink, purple, twisted\n",
       "unlock": "UNLOCK: Unlock this item by beating the Dark Room with Judas"
     },
@@ -5995,6 +6030,7 @@ var Isaac = {
       "name": "Rusted Key",
       "itemid": "TrinketID: 36",
       "pickup": "\"It feels lucky?\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives Isaac a higher chance to find keys and chests\n*, brown, wooden, broken \n",
       "unlock": "Available from the start"
     },
@@ -6002,6 +6038,7 @@ var Isaac = {
       "name": "Goat Hoof",
       "itemid": "TrinketID: 37",
       "pickup": "\"Speed up\"",
+			"quality": "Quality: 2",
       "moreDesc": "+0.15 Speed Up\n* grey, gray, bloody, square\n",
       "unlock": "Available from the start"
     },
@@ -6009,6 +6046,7 @@ var Isaac = {
       "name": "Mom's Pearl",
       "itemid": "TrinketID: 38",
       "pickup": "\"It emanates purity\"",
+			"quality": "Quality: 4",
       "moreDesc": "Grants a secondary chance of any non-specific heart drop turning into a soul heart\n* , the lost item pool, white, grey, gray, circle, round, moms pearl\n",
       "unlock": "Available from the start"
     },
@@ -6016,6 +6054,7 @@ var Isaac = {
       "name": "Cancer",
       "itemid": "TrinketID: 39",
       "pickup": "\"Yay, cancer!\"",
+			"quality": "Quality: 3",
       "moreDesc": "-2 Tear Delay (Tears Up)\nThe fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is\nBreaks the normal fire rate cap, allowing you to fire faster than the normal maximum\n*, green, brown, red, saddle, tube\n",
       "unlock": "Available from the start"
     },
@@ -6023,6 +6062,7 @@ var Isaac = {
       "name": "Red Patch",
       "itemid": "TrinketID: 40",
       "pickup": "\"Your rage grows\"",
+			"quality": "Quality: 4",
       "moreDesc": "You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room\n*, the lost item pool\n",
       "unlock": "Available from the start"
     },
@@ -6030,6 +6070,7 @@ var Isaac = {
       "name": "Match Stick",
       "itemid": "TrinketID: 41",
       "pickup": "\"Tastes like burning\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives Isaac a higher chance to find bombs\nPicking up the Match Stick is the only way to remove the Tick trinket\n*, red, white \n",
       "unlock": "Available from the start"
     },
@@ -6037,6 +6078,7 @@ var Isaac = {
       "name": "Lucky Toe",
       "itemid": "TrinketID: 42",
       "pickup": "\"Luck up!\"",
+			"quality": "Quality: 3",
       "moreDesc": "+1 Luck Up while held\n*, finger, thumb, nail, bone \n",
       "unlock": "UNLOCK: Unlock this item by blowing up 20 shop keepers (this includes the ones in the secret room)"
     },
@@ -6044,6 +6086,7 @@ var Isaac = {
       "name": "Cursed Skull",
       "itemid": "TrinketID: 43",
       "pickup": "\"Cursed?\"",
+			"quality": "Quality: 0",
       "moreDesc": "When you take damage while on 1/2 a heart, you are teleported back to the previous room\n* , the lost item pool, head, bone, grey, gray, \n",
       "unlock": "Available from the start"
     },
@@ -6051,6 +6094,7 @@ var Isaac = {
       "name": "Safety Cap",
       "itemid": "TrinketID: 44",
       "pickup": "\"Don't swallow it\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives Isaac a higher chance to find pills\n*, white, pill \n",
       "unlock": "Available from the start"
     },
@@ -6058,6 +6102,7 @@ var Isaac = {
       "name": "Ace of Spades",
       "itemid": "TrinketID: 45",
       "pickup": "\"Luck of the draw\"",
+			"quality": "Quality: 4",
       "moreDesc": "Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests\n*, card \n",
       "unlock": "Available from the start"
     },
@@ -6065,6 +6110,7 @@ var Isaac = {
       "name": "Isaac's Fork",
       "itemid": "TrinketID: 46",
       "pickup": "\"Consume thy enemy\"",
+			"quality": "Quality: 1",
       "moreDesc": "After clearing a room, you have a chance to heal for half a red heart\n*, the lost item pool, silver, metal, grey, gray, isaacs fork\n",
       "unlock": "Available from the start"
     },
@@ -6072,6 +6118,7 @@ var Isaac = {
       "name": "A Missing Page",
       "itemid": "TrinketID: 48",
       "pickup": "\"It glows with power\"",
+			"quality": "Quality: 1",
       "moreDesc": "When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect\nThe chance to damage enemies is affected by your luck stat and at +50 or more Luck it will activate 50% of the time\n* , the lost item pool, pink, purple, paper, red\n",
       "unlock": "Available from the start"
     },
@@ -6079,6 +6126,7 @@ var Isaac = {
       "name": "Bloody Penny",
       "itemid": "TrinketID: 49",
       "pickup": "\"Wealth of health\"",
+			"quality": "Quality: 3",
       "moreDesc": "Everytime you pick up a penny, you have a 25% chance to spawn a red heart on the floor\n* , the lost item pool, red, coin, cent, money \n",
       "unlock": "UNLOCK: Unlock this item by beating the Chest with Samson"
     },
@@ -6086,6 +6134,7 @@ var Isaac = {
       "name": "Burnt Penny",
       "itemid": "TrinketID: 50",
       "pickup": "\"Wealth of chaos\"",
+			"quality": "Quality: 3",
       "moreDesc": "Everytime you pick up a coin, you have a 25% chance to spawn a bomb on the floor\n*, money, silver, grey, gray, steam, smoke, cent\n",
       "unlock": "UNLOCK: Unlock this item by beating Challenge #13 (Beans!)"
     },
@@ -6093,6 +6142,7 @@ var Isaac = {
       "name": "Flat Penny",
       "itemid": "TrinketID: 51",
       "pickup": "\"Wealth of answers\"",
+			"quality": "Quality: 3",
       "moreDesc": "Everytime you pick up a coin, you have a 25% chance to spawn a key\n*, white, grey, gray, coin, cent, money, cash \n",
       "unlock": "Available from the start"
     },
@@ -6100,6 +6150,7 @@ var Isaac = {
       "name": "Counterfeit Penny",
       "itemid": "TrinketID: 52",
       "pickup": "\"Wealth of wealth\"",
+			"quality": "Quality: 3",
       "moreDesc": "When picking up a coin, you have a chance to automatically gain one more coin\n*, yellow, golden, coin, cent, money, cash, sparkle\n",
       "unlock": "UNLOCK: Unlock this item by playing the shell game in the arcade 100 times"
     },
@@ -6107,6 +6158,7 @@ var Isaac = {
       "name": "Tick",
       "itemid": "TrinketID: 53",
       "pickup": "\"Well, that's not coming off\"",
+			"quality": "Quality: 4",
       "moreDesc": "When you enter a boss room, immediately remove 15% health from the boss and restore 1 red heart\nThis trinket cannot be dropped by holding the drop key or picking up other trinkets. The only way to remove it is via having a second trinket slot (Mom's Purse, Belly Button) or absorbing it (Marbles, Smelter, Gulp! pill) or picking up the Match Stick trinket, which will burn it off you\n*, insect, bug, spider, beetle, grey, gray, brown \n",
       "unlock": "Available from the start"
     },
@@ -6114,6 +6166,7 @@ var Isaac = {
       "name": "Isaac's Head",
       "itemid": "TrinketID: 54",
       "pickup": "\"Dead friend\"",
+			"quality": "Quality: 2",
       "moreDesc": "While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage\n*, dead, crying, isaacs head \n",
       "unlock": "UNLOCK: Unlock this item by beating the Boss Rush with Isaac"
     },
@@ -6121,6 +6174,7 @@ var Isaac = {
       "name": "Maggy's Faith",
       "itemid": "TrinketID: 55",
       "pickup": "\"Faith's reward\"",
+			"quality": "Quality: 4",
       "moreDesc": "At the start of a new floor, you get an eternal heart\n* , the lost item pool, cross, yellow, golden, glow, maggys faith\n",
       "unlock": "UNLOCK: Unlock this item by beating the Dark Room with Maggy"
     },
@@ -6128,6 +6182,7 @@ var Isaac = {
       "name": "Judas' Tongue",
       "itemid": "TrinketID: 56",
       "pickup": "\"Payment received\"",
+			"quality": "Quality: 2",
       "moreDesc": "Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart\n* , the lost item pool, tong, red, bloody, lips, judas tongue \n",
       "unlock": "UNLOCK: Unlock this item by beating Satan with Judas"
     },
@@ -6135,6 +6190,7 @@ var Isaac = {
       "name": "???'s Soul",
       "itemid": "TrinketID: 57",
       "pickup": "\"Imaginary friend\"",
+			"quality": "Quality: 0",
       "moreDesc": "Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac\n*, dead, baby, blue, ???s soul, blue baby's soul, blue babys soul\n",
       "unlock": "UNLOCK: Unlock this item by beating the Dark Room with Blue Baby"
     },
@@ -6142,6 +6198,7 @@ var Isaac = {
       "name": "Samson's Lock",
       "itemid": "TrinketID: 58",
       "pickup": "\"Your rage grows\"",
+			"quality": "Quality: 1",
       "moreDesc": "When you kill an enemy, you have a chance to get +0.5 damage up for the current room\n*, hair, pony, tail, brown, red, samsons lock \n",
       "unlock": "UNLOCK: Unlock this item by beating the Dark Room with Samson"
     },
@@ -6149,6 +6206,7 @@ var Isaac = {
       "name": "Cain's Eye",
       "itemid": "TrinketID: 59",
       "pickup": "\"May you see your destination",
+			"quality": "Quality: 1",
       "moreDesc": "Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass)\n*, circle, white, black \n",
       "unlock": "UNLOCK: Unlock this item by beating the Chest with Cain"
     },
@@ -6156,6 +6214,7 @@ var Isaac = {
       "name": "Eve's Bird Foot",
       "itemid": "TrinketID: 60",
       "pickup": "\"Revenge from beyond\"",
+			"quality": "Quality: 3",
       "moreDesc": "When you kill an enemy, you have a chance to spawn a transparent Dead Bird familiar\nThe Dead Bird familiar deals 2 damage per tick to enemies while in contact with them\n*, grey, gray, black, striped, eves bird foot \n",
       "unlock": "UNLOCK: Unlock this item by beating the Isaac boss with Eve"
     },
@@ -6163,6 +6222,7 @@ var Isaac = {
       "name": "The Left Hand",
       "itemid": "TrinketID: 61",
       "pickup": "\"The left hand path reaps dark rewards\"",
+			"quality": "Quality: 4",
       "moreDesc": "Replaces chest spawns with red chests\n* northernlion, drop the left hand, paw, bloody, bleeding, grey, gray\n",
       "unlock": "UNLOCK: Unlock this item by beating Ultra Pride"
     },
@@ -6170,6 +6230,7 @@ var Isaac = {
       "name": "Shiny Rock",
       "itemid": "TrinketID: 62",
       "pickup": "\"It shines for it's brothers\"",
+			"quality": "Quality: 1",
       "moreDesc": "While held, tinted rocks and rocks with a crawlspace below them will flash white every 10 seconds\n*, grey, gray, silver, lump, metal, stone \n",
       "unlock": "Available from the start"
     },
@@ -6177,6 +6238,7 @@ var Isaac = {
       "name": "Safety Scissors",
       "itemid": "TrinketID: 63",
       "pickup": "\"Fuse cutter\"",
+			"quality": "Quality: 4",
       "moreDesc": "Turns all troll bombs into bombs which you can pick up and use\nSuper Troll bombs turn into 1+1 free double bomb pickups\n*, blue, metal, sissors \n",
       "unlock": "Available from the start"
     },
@@ -6184,6 +6246,7 @@ var Isaac = {
       "name": "Rainbow Worm",
       "itemid": "TrinketID: 64",
       "pickup": "\"Bleep bloop blop\"",
+			"quality": "Quality: 0",
       "moreDesc": "Gives your tears a random worm effect every few seconds\nThe possible tear effects include: Whip Worm, Ring Worm, Wiggle Worm, Flat Worm, Hook Worm, Pulse Worm, Tape Worm and Lazy Worm\n*, lgbt, circle, snake, red, green, blue \n",
       "unlock": "Available from the start"
     },
@@ -6191,6 +6254,7 @@ var Isaac = {
       "name": "Tape Worm",
       "itemid": "TrinketID: 65",
       "pickup": "\"Floooooooooop!\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held, Tape Worm doubles your range stat and halves your tear height stat\n*, intestine, white, snake \n",
       "unlock": "Available from the start"
     },
@@ -6198,6 +6262,7 @@ var Isaac = {
       "name": "Lazy Worm",
       "itemid": "TrinketID: 66",
       "pickup": "\"Pft\"",
+			"quality": "Quality: 0",
       "moreDesc": "-0.4 Shot Speed Down\n*, circle, button, eyes, white \n",
       "unlock": "Available from the start"
     },
@@ -6205,6 +6270,7 @@ var Isaac = {
       "name": "Cracked Dice",
       "itemid": "TrinketID: 67",
       "pickup": "\"You feel cursed... kinda.\"",
+			"quality": "Quality: 4",
       "moreDesc": "Every time you get hit, you have a chance to activate the D6, D20, D8, D10 or D12 effect\n*, stone, rock, grey, gray, white, dice, pip, broken, die \n",
       "unlock": "UNLOCK: Unlock this item by beating Greed Mode with ???"
     },
@@ -6212,6 +6278,7 @@ var Isaac = {
       "name": "Super Magnet",
       "itemid": "TrinketID: 68",
       "pickup": "\"It pulls\"",
+			"quality": "Quality: 0",
       "moreDesc": "While held this trinket causes all pickups and enemies to move slowly towards you\nWill also attract the Mom's Foot and Ultra Greed door entities\n*, white, grey, gray, pill, medicine, drug \n",
       "unlock": "Available from the start"
     },
@@ -6219,6 +6286,7 @@ var Isaac = {
       "name": "Faded Polaroid",
       "itemid": "TrinketID: 69",
       "pickup": "\"You feel faded\"",
+			"quality": "Quality: 1",
       "moreDesc": "Randomly Isaac will gain a camouflage for a few seconds and all enemies in the current room will have a confused status effect applied to them\nThis trinket can be used to open the door to Mausoleum in Depths II\n*, photo, family, old \n",
       "unlock": "Available from the start"
     },
@@ -6226,6 +6294,7 @@ var Isaac = {
       "name": "Louse",
       "itemid": "TrinketID: 70",
       "pickup": "\"Itchy, tasty...\"",
+			"quality": "Quality: 0",
       "moreDesc": "Gives a small chance to spawn a friendly attack spider while in a hostile room with enemies\n*, bug, insect, pink, legs \n",
       "unlock": "Available from the start"
     },
@@ -6233,6 +6302,7 @@ var Isaac = {
       "name": "Bob's Bladder",
       "itemid": "TrinketID: 71",
       "pickup": "\"Creepy bombs\"",
+			"quality": "Quality: 0",
       "moreDesc": "Leaves a pool of green creep under all bombs you place, which damages enemies that walk over it\n*, green, bogey, snot, ocarina, bobs bladder, bob bladder \n",
       "unlock": "Available from the start"
     },
@@ -6240,6 +6310,7 @@ var Isaac = {
       "name": "Watch Battery",
       "itemid": "TrinketID: 72",
       "pickup": "\"Lil charge\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives a +6.66% chance of a getting a small battery after clearing a room\nGives a +2.0% chance for pickups to be small batteries\nGives a +5.0% chance to add an extra charge to your active item after clearing a room\n*, metal, grey, gray, silver, pill, cross \n",
       "unlock": "Available from the start"
     },
@@ -6247,6 +6318,7 @@ var Isaac = {
       "name": "Blasting Cap",
       "itemid": "TrinketID: 73",
       "pickup": "\"Pop! Pop!\"",
+			"quality": "Quality: 1",
       "moreDesc": "Exploding bombs now have a chance to drop another bomb that you can pick up\n*, orange, red, circle \n",
       "unlock": "Available from the start"
     },
@@ -6254,6 +6326,7 @@ var Isaac = {
       "name": "Stud Finder",
       "itemid": "TrinketID: 74",
       "pickup": "\"The ground below feels hollow...\"",
+			"quality": "Quality: 3",
       "moreDesc": "Higher chance to find crawl spaces when exploding rocks\n*, toe, finger, thumb, grey, gray, black, red, yellow \n",
       "unlock": "UNLOCK: Unlock this trinket by beating Challenge #27 (Brains)"
     },
@@ -6261,6 +6334,7 @@ var Isaac = {
       "name": "Error",
       "itemid": "TrinketID: 75",
       "pickup": "\"Effect not found?\"",
+			"quality": "Quality: 0",
       "moreDesc": "Gives a different trinket effect per room, randomly choosing between any of the other available trinkets in the game\nEach room is locked to a specific trinket effect, meaning if you exit and re-enter a room, that specific room will always have the same effect.\n      \n*, 404, red\n",
       "unlock": "Available from the start"
     },
@@ -6268,6 +6342,7 @@ var Isaac = {
       "name": "Poker Chip",
       "itemid": "TrinketID: 76",
       "pickup": "\"It's double down time!\"",
+			"quality": "Quality: 0",
       "moreDesc": "Chests now have a 50/50 chance to either pay out with extra consumables or nothing/an enemy\n*, red, white, circle, pill, bow \n",
       "unlock": "UNLOCK: Unlock this trinket by beating Challenge #26 (I Rule)"
     },
@@ -6275,6 +6350,7 @@ var Isaac = {
       "name": "Blister",
       "itemid": "TrinketID: 77",
       "pickup": "\"Bounce back!\"",
+			"quality": "Quality: 3",
       "moreDesc": "Tears have a stronger knockback effect while this trinket is held\n*, white, lump, circle, hairy \n",
       "unlock": "Available from the start"
     },
@@ -6282,6 +6358,7 @@ var Isaac = {
       "name": "Second Hand",
       "itemid": "TrinketID: 78",
       "pickup": "\"Extended stat effect time\"",
+			"quality": "Quality: 2",
       "moreDesc": "Increases the time that status effects stay on enemies. e.g. With poison effects, the damage over time poison will last for much longer.\n      \n*, red, stick, dynamite, tnt, rod \n",
       "unlock": "Available from the start"
     },
@@ -6289,6 +6366,7 @@ var Isaac = {
       "name": "Endless Nameless",
       "itemid": "TrinketID: 79",
       "pickup": "\"I'm stuck in a loop...\"",
+			"quality": "Quality: 4",
       "moreDesc": "While held there is a small chance when using a tarot card or pill that a copy of it will be dropped on the floor next to you\n*, grey, gray, black, infinity, oo \n",
       "unlock": "Available from the start"
     },
@@ -6296,6 +6374,7 @@ var Isaac = {
       "name": "Black Feather",
       "itemid": "TrinketID: 80",
       "pickup": "\"With darkness comes power\"",
+			"quality": "Quality: 1",
       "moreDesc": "+0.2 Damage Up for each 'evil' item you have\nItems classed as evil in this case are Black Candle, Ceremonial Robes, Abaddon, Goat Head, Match Book, Missing Page 2, Safety Pin\n*, grey, gray, leaf \n",
       "unlock": "UNLOCK: Unlock this item by beating Greed Mode with Eve"
     },
@@ -6303,6 +6382,7 @@ var Isaac = {
       "name": "Blind Rage",
       "itemid": "TrinketID: 81",
       "pickup": "\"Blind to damage\"",
+			"quality": "Quality: 2",
       "moreDesc": "Invincibility lasts longer after getting hit (Increased i-frames)\nThis makes it possible to use the Blood Donation machine twice from one hit of damage\n*, bandana, sling, white, knot, blindfold \n",
       "unlock": "UNLOCK: Unlock this item by beating Blue Womb (Hush) with Samson"
     },
@@ -6310,6 +6390,7 @@ var Isaac = {
       "name": "Golden Horse Shoe",
       "itemid": "TrinketID: 82",
       "pickup": "\"Feel lucky?\"",
+			"quality": "Quality: 1",
       "moreDesc": "+15% chance to get a double item room to spawn on the next floor\nIf the effect activates, two items spawn in your item room, however only one can be taken (Same effect as the More Options item)\nThe chance doubles to +30% with the effect from Mom's Box\n*, yellow, u, magnet \n",
       "unlock": "Available from the start"
     },
@@ -6317,6 +6398,7 @@ var Isaac = {
       "name": "Store Key",
       "itemid": "TrinketID: 83",
       "pickup": "\"Stores are open\"",
+			"quality": "Quality: 3",
       "moreDesc": "Automatically opens all shop room doors for free\nUNLOCK: Keeper starts with this trinket after beating Satan with Keeper\n* starting, grey, gray, metal\n",
       "unlock": "UNLOCK: Unlock this trinket by donating 666 coins to the Greed Donation Machine"
     },
@@ -6324,6 +6406,7 @@ var Isaac = {
       "name": "Rib of Greed",
       "itemid": "TrinketID: 84",
       "pickup": "\"Feels greedy\"",
+			"quality": "Quality: 4",
       "moreDesc": "Forces the Greed and Super Greed mini bosses to no longer appear in shops or secret rooms\nHolding Rib of Greed increase your chance to receive coin drops\n*, white, trunk, bent \n",
       "unlock": "UNLOCK: Unlock this trinket by beating Ultra Greed with Keeper"
     },
@@ -6331,6 +6414,7 @@ var Isaac = {
       "name": "Karma",
       "itemid": "TrinketID: 85",
       "pickup": "\"Karma up\"",
+			"quality": "Quality: 1",
       "moreDesc": "Donating to a Donation Machine has a chance to heal Isaac for a full red heart or spawn a Beggar\nCan't spawn in greed mode\n*, black, three, spiral \n",
       "unlock": "UNLOCK: Unlock this item by beating The Lamb boss with Keeper"
     },
@@ -6338,6 +6422,7 @@ var Isaac = {
       "name": "Lil Larva",
       "itemid": "TrinketID: 86",
       "pickup": "\"the poop is moving...\"",
+			"quality": "Quality: 2",
       "moreDesc": "Destroying poops now gives you a blue fly\n*, white, grey, gray, bent \n",
       "unlock": "Available from the start"
     },
@@ -6345,6 +6430,7 @@ var Isaac = {
       "name": "Mom's Locket",
       "itemid": "TrinketID: 87",
       "pickup": "\"you feel her love\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held, you heal for half a red heart every time you use a key to open a door or golden chest\nChanges all half red hearts into full hearts\nHearts dropped from Tainted Magdalene's mechanic will be always full red hearts\n*, red, brown, grey, gray, necklace, moms locket, mom locket \n",
       "unlock": "Available from the start"
     },
@@ -6352,6 +6438,7 @@ var Isaac = {
       "name": "NO!",
       "itemid": "TrinketID: 88",
       "pickup": "\"Never again!\"",
+			"quality": "Quality: 4",
       "moreDesc": "While this trinket is held you have a significantly lower chance to find spacebar/active items\nIt will cause passive items to spawn except when the game cannot generate any more passive items and will then instead choose spacebar/active items\nSome hard coded spacebar items from bosses and mini-bosses (i.e. Krampus Head) can still spawn\nBible drops caused by the Rosary item are not prevented by this trinket\n*, stop, red, circle, line, cross, entry, warning \n",
       "unlock": "Available from the start"
     },
@@ -6359,6 +6446,7 @@ var Isaac = {
       "name": "Child Leash",
       "itemid": "TrinketID: 89",
       "pickup": "\"Keep your friends close...\"",
+			"quality": "Quality: 1",
       "moreDesc": "Causes your familiars to stay closer to each other\n*, ribbon, green, blue \n",
       "unlock": "Available from the start"
     },
@@ -6366,6 +6454,7 @@ var Isaac = {
       "name": "Brown Cap",
       "itemid": "TrinketID: 90",
       "pickup": "\"Fartoom!\"",
+			"quality": "Quality: 0",
       "moreDesc": "Poop in the environment will now explode when destroyed\n*, circle, rectangle \n",
       "unlock": "Available from the start"
     },
@@ -6373,6 +6462,7 @@ var Isaac = {
       "name": "Meconium",
       "itemid": "TrinketID: 91",
       "pickup": "\"Eww\"",
+			"quality": "Quality: 0",
       "moreDesc": "While held you have an increased chance for Black Poops to spawn, which deal damage to all enemies in the room when destroyed\nGives The Poop active item a chance to spawn a Black Poop too\n*, black, grey, gray, poop \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Greedier Mode with ???"
     },
@@ -6380,6 +6470,7 @@ var Isaac = {
       "name": "Cracked Crown",
       "itemid": "TrinketID: 92",
       "pickup": "\"Boost Stats\"",
+			"quality": "Quality: 3",
       "moreDesc": "Boosts speed, range, shot speed, tears and damage if they are above their base values by roughly +20%\nAffects stat bonuses from passive items, trinkets that are absorbed or in a second trinket slot, and permanent bonuses given by items such as Void\n*, broken, damaged, yellow, golden \n",
       "unlock": "UNLOCK: Unlock this trinket by getting a 5-win streak in daily challenges (must have a score of above 0 on the score screen)"
     },
@@ -6387,6 +6478,7 @@ var Isaac = {
       "name": "Used Diaper",
       "itemid": "TrinketID: 93",
       "pickup": "\"You Stink\"",
+			"quality": "Quality: 0",
       "moreDesc": "While held, gives the Skatole effect only in certain rooms, which will turn hostile flies to neutral and stop others from shooting\nAttack, Dart and Ring Flies turn into neutral Black Flies and Pooters and Fat Flies will no longer fire at you\n*, circle, white, fly, brown, poop \n",
       "unlock": "Available from the start"
     },
@@ -6394,6 +6486,7 @@ var Isaac = {
       "name": "Fish Tail",
       "itemid": "TrinketID: 94",
       "pickup": "\"It also stinks!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Items and trinkets which generate blue flies and spiders will have double the effect, causing twice as many to spawn\n*, grey, gray, green, arrow, flower, plant \n",
       "unlock": "Available from the start"
     },
@@ -6401,6 +6494,7 @@ var Isaac = {
       "name": "Black Tooth",
       "itemid": "TrinketID: 95",
       "pickup": "\"It looks dead\"",
+			"quality": "Quality: 2",
       "moreDesc": "Some tears will randomly become a black tooth, that deal double your normal tear damage and can poison enemies\n*, grey, gray, horn \n",
       "unlock": "Available from the start"
     },
@@ -6408,6 +6502,7 @@ var Isaac = {
       "name": "Ouroboros Worm",
       "itemid": "TrinketID: 96",
       "pickup": "\"Foop foop!\"",
+			"quality": "Quality: 0",
       "moreDesc": "Tears become spectral and travel in a huge spiral pattern\n+1.5 Range Up\n+0.4 Tears up\n*, grey, gray, brown, circle, snake \n",
       "unlock": "Available from the start"
     },
@@ -6415,6 +6510,7 @@ var Isaac = {
       "name": "Tonsil",
       "itemid": "TrinketID: 97",
       "pickup": "\"Sick...\"",
+			"quality": "Quality: 2",
       "moreDesc": "Every time you take damage you have a very small chance to gain a Tonsil familiar, which follows you and blocks enemy projectiles\nThis effect can happen twice before the Tonsil trinket is destroyed\nDoes not deal contact damage to enemies\n*, pink, bloody, brain \n",
       "unlock": "Available from the start"
     },
@@ -6422,6 +6518,7 @@ var Isaac = {
       "name": "Nose Goblin",
       "itemid": "TrinketID: 98",
       "pickup": "\"Seems magic...\"",
+			"quality": "Quality: 4",
       "moreDesc": "Your tears have a random chance to become booger tears\nBooger tears stick on to enemies and deal periodic poison damage until they die or 60 seconds passes. Each tick of poison damage is equal to your normal tear damage\nThe boogers will have a homing effect\n*, green, snot, booger, bogey, slime \n",
       "unlock": "Available from the start"
     },
@@ -6429,6 +6526,7 @@ var Isaac = {
       "name": "Super Ball",
       "itemid": "TrinketID: 99",
       "pickup": "\"Boing!\"",
+			"quality": "Quality: 0",
       "moreDesc": "Some random tears will gain the Rubber Cement effect and become bouncy\n*, yellow, orange, red, circle, stripe \n",
       "unlock": "Available from the start"
     },
@@ -6436,6 +6534,7 @@ var Isaac = {
       "name": "Vibrant Bulb",
       "itemid": "TrinketID: 100",
       "pickup": "\"It needs power\"",
+			"quality": "Quality: 2",
       "moreDesc": "Grants +0.25 Speed, +0.75 Range, +0.1 Shot Speed, +0.2 Tears, +0.5 Damage and +1 Luck when Isaac's active item is fully charged\nInfinite use items such as Potato Peeler count as charged and provide the bonus from this trinket\n*, yellow, light \n",
       "unlock": "Available from the start"
     },
@@ -6443,6 +6542,7 @@ var Isaac = {
       "name": "Dim Bulb",
       "itemid": "TrinketID: 101",
       "pickup": "\"I think it's broken\"",
+			"quality": "Quality: 2",
       "moreDesc": "Grants +0.5 Speed, +1.5 Range, +0.3 Shot Speed, +0.4 Tears, +1.5 Damage when Isaac's active item is completely uncharged\nOne-time use items such as Mama Mega count as uncharged and provide the bonus from this trinket\n*, grey, gray, light \n",
       "unlock": "Available from the start"
     },
@@ -6450,6 +6550,7 @@ var Isaac = {
       "name": "Fragmented Card",
       "itemid": "TrinketID: 102",
       "pickup": "\"Double moon\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives you another secret room on each new floor while held\nDoes not spawn more than one super secret room, only the normal secret room\n*, purple, torn, ripped, paper, page, poster \n",
       "unlock": "Available from the start"
     },
@@ -6457,6 +6558,7 @@ var Isaac = {
       "name": "Equality!",
       "itemid": "TrinketID: 103",
       "pickup": "\"=\"",
+			"quality": "Quality: 1",
       "moreDesc": "When you have the same amount of coins, bombs and keys, half consumables turn into their doubled version\nThis effect works for any number of consumables, including 0 and 99, as long as the count for coins/keys/bombs is equal\n*, red, lines, redpill \n",
       "unlock": "Available from the start"
     },
@@ -6464,6 +6566,7 @@ var Isaac = {
       "name": "Wish Bone",
       "itemid": "TrinketID: 104",
       "pickup": "\"Make a wish\"",
+			"quality": "Quality: 1",
       "moreDesc": "Every time you take damage you have a very small chance to spawn a random pedestal item\nWhen the effect triggers, the trinket is destroyed\n*, grey, gray, claw, rib \n",
       "unlock": "Available from the start"
     },
@@ -6471,6 +6574,7 @@ var Isaac = {
       "name": "Bag Lunch",
       "itemid": "TrinketID: 105",
       "pickup": "\"I wonder what it is\"",
+			"quality": "Quality: 2",
       "moreDesc": "Every time you take damage you have a very small chance to spawn the Lunch item, which gives +1 HP up\nWhen the effect triggers, this trinket is destroyed\n*, brown, sack, hoof \n",
       "unlock": "Available from the start"
     },
@@ -6478,6 +6582,7 @@ var Isaac = {
       "name": "Lost Cork",
       "itemid": "TrinketID: 106",
       "pickup": "\"Uncorked\"",
+			"quality": "Quality: 2",
       "moreDesc": "Increases the radius of any creep you produce\n*, brown, yellow, orange, black \n",
       "unlock": "Available from the start"
     },
@@ -6485,6 +6590,7 @@ var Isaac = {
       "name": "Crow Heart",
       "itemid": "TrinketID: 107",
       "pickup": "\"Drain me\"",
+			"quality": "Quality: 2",
       "moreDesc": "While held, any damage taken remove red hearts first, before soul hearts, black hearts and rotten heart damage\nWhile at 1/2 of a red heart, it will begin to remove your other hearts again\n* crow's, purple, blue, bloody\n",
       "unlock": "UNLOCK: Unlock this item by beating Greedier mode with Eve"
     },
@@ -6492,6 +6598,7 @@ var Isaac = {
       "name": "Walnut",
       "itemid": "TrinketID: 108",
       "pickup": "\"Thats a hard nut to crack!\"",
+			"quality": "Quality: 1",
       "moreDesc": "The Walnut has a chance to break when taking damage from an explosion. If it does, it will drop a random trinket, coin, heart and key\nThe Walnut trinket is destroyed once the effect activates\n*, brown, brain, stone, rock \n",
       "unlock": "Available from the start"
     },
@@ -6499,6 +6606,7 @@ var Isaac = {
       "name": "Duct Tape",
       "itemid": "TrinketID: 109",
       "pickup": "\"Stuck!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Causes any orbitals you have to stop moving while held\nStops shooting familiars from moving (including Lilith's Incubus)\nSome familiars with irregular movement are not affected by Duct Tape, such as Abel, BBF, Bumbo, Guppy's Hair Ball, Lil Gurdy, Punching Bag, Robo-Baby 2.0, Succubus\n*, grey, gray, tp, toilet, paper, roll, silver \n",
       "unlock": "Available from the start"
     },
@@ -6506,6 +6614,7 @@ var Isaac = {
       "name": "Silver Dollar",
       "itemid": "TrinketID: 110",
       "pickup": "\"Feels lucky...\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held, shops will now appear on the womb floors (The Womb, Utero and Scarred Womb)\n*, coin, money, cash, cent \n",
       "unlock": "UNLOCK: Unlock this item by defeating Delirium in The Void floor with Cain"
     },
@@ -6513,6 +6622,7 @@ var Isaac = {
       "name": "Bloody Crown",
       "itemid": "TrinketID: 111",
       "pickup": "\"Drips with blood...\"",
+			"quality": "Quality: 4",
       "moreDesc": "While held, item rooms now appear on the womb floors (The Womb, Utero and Scarred Womb)\n*, red, dripping \n",
       "unlock": "UNLOCK: Unlock this item by defeating Delirium in The Void floor with Samson"
     },
@@ -6520,6 +6630,7 @@ var Isaac = {
       "name": "Pay To Win",
       "itemid": "TrinketID: 112",
       "pickup": "\"...\"",
+			"quality": "Quality: 4",
       "moreDesc": "While held, restock boxes will always spawn in item rooms\n*, cent, money, cash, coin, pixel, blue, green, p2w \n",
       "unlock": "Available from the start"
     },
@@ -6527,6 +6638,7 @@ var Isaac = {
       "name": "Locust of War",
       "itemid": "TrinketID: 113",
       "pickup": "\"I Bring Wrath\"",
+			"quality": "Quality: 3",
       "moreDesc": "Upon entering a room with enemies, spawns a Red Locust which detonates upon impact with enemies, dealing double tear damage for the impact of the Locust and 60 damage for the explosion\nCan be dangerous as the fly will target the nearest enemy, which can be close enough to catch Isaac in its blast radius\n*, red, wings, fly, locust of wrath\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac in the Cathedral as Apollyon"
     },
@@ -6534,6 +6646,7 @@ var Isaac = {
       "name": "Locust of Pestilence",
       "itemid": "TrinketID: 114",
       "pickup": "\"I Bring Pestilence\"",
+			"quality": "Quality: 3",
       "moreDesc": "At the start of each new hostile room you spawn a green attack fly, which will target a nearby enemy, deal double your tear damage and then poison them\n*, green, wings, fly \n",
       "unlock": "UNLOCK: Unlock this item by beating Satan with Apollyon"
     },
@@ -6541,6 +6654,7 @@ var Isaac = {
       "name": "Locust of Famine",
       "itemid": "TrinketID: 115",
       "pickup": "\"I bring Famine\"",
+			"quality": "Quality: 3",
       "moreDesc": "At the start of each new hostile room you spawn a yellow attack fly, which will target a nearby enemy, deal double your tear damage and apply a slowing effect to it\n*, brown, wings, fly \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating ??? in The Chest as Apollyon"
     },
@@ -6548,6 +6662,7 @@ var Isaac = {
       "name": "Locust of Death",
       "itemid": "TrinketID: 116",
       "pickup": "\"I bring Death\"",
+			"quality": "Quality: 3",
       "moreDesc": "Upon entering a room with enemies, spawns a Black Locust that deals quadruple Isaac's damage, applied as two hits of double damage\n*, grey, gray, black, wings, fly \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating The Lamb as Apollyon"
     },
@@ -6555,6 +6670,7 @@ var Isaac = {
       "name": "Locust of Conquest",
       "itemid": "TrinketID: 117",
       "pickup": "\"I Bring Conquest\"",
+			"quality": "Quality: 3",
       "moreDesc": "At the start of each new hostile room you spawn 2-5 white attack flies, which will target a nearby enemy and deal double your tear damage to it\n*, white, wings, fly \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Boss Rush as Apollyon"
     },
@@ -6562,6 +6678,7 @@ var Isaac = {
       "name": "Bat Wing",
       "itemid": "TrinketID: 118",
       "pickup": "\"They Are Growing...\"",
+			"quality": "Quality: 2",
       "moreDesc": "When killing an enemy, you have a very small chance to gain the ability to fly for the rest of the room\n*, black, grey, gray \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Greedier Mode with Azazel"
     },
@@ -6569,6 +6686,7 @@ var Isaac = {
       "name": "Stem Cell",
       "itemid": "TrinketID: 119",
       "pickup": "\"Regen!\"",
+			"quality": "Quality: 1",
       "moreDesc": "Stem Cell heals Isaac's red heart containers to 50% each floor\nIf Isaac already has 50% health or more, it heals half of a heart instead\n*, red, pink, orange, eye, circle \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Greedier Mode with Samson"
     },
@@ -6576,6 +6694,7 @@ var Isaac = {
       "name": "Hairpin",
       "itemid": "TrinketID: 120",
       "pickup": "\"Danger charge\"",
+			"quality": "Quality: 1",
       "moreDesc": "Fully recharges your active item at the start of each boss fight\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Zaratus\n*, yellow, whip, glow, black \n",
       "unlock": "Available from the start"
     },
@@ -6583,6 +6702,7 @@ var Isaac = {
       "name": "Wooden Cross",
       "itemid": "TrinketID: 121",
       "pickup": "\"My faith protects me\"",
+			"quality": "Quality: 4",
       "moreDesc": "Gives you the Holy Mantle shield effect at the start of every new floor, which protects you from the next hit of damage you take\nDoes not recharge until the start of the next floor\nStacks with the effects from Holy Mantle and Blanket, but it does not stack with Holy Card\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ep and Mills\n*, brown, crucifix \n",
       "unlock": "Available from the start"
     },
@@ -6590,6 +6710,7 @@ var Isaac = {
       "name": "Butter!",
       "itemid": "TrinketID: 122",
       "pickup": "\"Can't hold it!\"",
+			"quality": "Quality: 0",
       "moreDesc": "Using your active item while holding this trinket will drop it back on a pedestal on the ground\nAlso after taking damage, you have a very small chance to drop one of your passive items\nOne-time use active items will be consumed and not dropped\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by MarkusLeben and iguesti\n*, yellow, golden, box, block, square, cube \n",
       "unlock": "Available from the start"
     },
@@ -6597,6 +6718,7 @@ var Isaac = {
       "name": "Filigree Feather",
       "itemid": "TrinketID: 123",
       "pickup": "\"Angelic spoils!\"",
+			"quality": "Quality: 4",
       "moreDesc": "Holding this trinket will cause the Angel mini bosses to drop normal items instead of Key Pieces\nAdded as part of the Afterbirth+ Booster Pack #2, designed by Edmund McMillen\n*, silver, grey, gray, white, quill \n",
       "unlock": "Available from the start"
     },
@@ -6604,6 +6726,7 @@ var Isaac = {
       "name": "Door Stop",
       "itemid": "TrinketID: 124",
       "pickup": "\"Hold the door!\"",
+			"quality": "Quality: 4",
       "moreDesc": "While held, the last door Isaac went through stays open, allowing him to leave the room even if enemies are in it\nThis trinket works on boss rooms (except Ultra Greed) and devil rooms containing Krampus, allowing you to exit out mid-fight\nDoes not drop in Greed mode\n*, door, stop, wedge, cheese, wood, brown, hodor, game of thrones, Wylis \n",
       "unlock": "UNLOCK: Unlock this trinket by blowing up doors and secret room walls 50 times"
     },
@@ -6611,6 +6734,7 @@ var Isaac = {
       "name": "Extension Cord",
       "itemid": "TrinketID: 125",
       "pickup": "\"Charged friends\"",
+			"quality": "Quality: 1",
       "moreDesc": "After being picked up, a yellow laser chain now flows through Isaac's familiars\nAdded as part of the Afterbirth+ Booster Pack #4 and based on the Steam Workshop mod created by Strawrat and Aczom\n*,\n",
       "unlock": "Available from the start"
     },
@@ -6618,6 +6742,7 @@ var Isaac = {
       "name": "Rotten Penny",
       "itemid": "TrinketID: 126",
       "pickup": "\"Wealth of flies\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held, spawns +1 friendly blue fly every time you pick up a coin\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Eufuu\n*,\n",
       "unlock": "UNLOCK: Unlock this trinket by having a lot of blue flies at once"
     },
@@ -6625,6 +6750,7 @@ var Isaac = {
       "name": "Baby-Bender",
       "itemid": "TrinketID: 127",
       "pickup": "\"Feed them magic!\"",
+			"quality": "Quality: 2",
       "moreDesc": "While held this trinket gives your familiars homing shots\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Ink Tears\n*, baby bender babybender\n",
       "unlock": "UNLOCK: Unlock this item by having two items or effects that grant homing shots at once (e.g. Spoon Bender, Telepathy for Dummies, I - The Magician)"
     },
@@ -6632,6 +6758,7 @@ var Isaac = {
       "name": "Finger Bone",
       "itemid": "TrinketID: 128",
       "pickup": "\"It looks brittle\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held, gives you a small chance to gain a bone heart everytime you take damage\nAdded as part of the Afterbirth+ Booster Pack #5\n*,\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Ultra Greed as The Forgotten"
     },
@@ -6639,6 +6766,7 @@ var Isaac = {
       "name": "Jawbreaker",
       "itemid": "TrinketID: 129",
       "pickup": "\"Don't chew on it\"",
+			"quality": "Quality: 3",
       "moreDesc": "Tears have a chance to become a tooth, dealing x3.2 damage, similar to Tough Love\nThe chance to fire a tooth with this trinket is affected by your Luck stat\nAt +0 luck you have ~12% chance for this effect to activate\nAt +9 luck every tear you fire will be a tooth\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6646,6 +6774,7 @@ var Isaac = {
       "name": "Chewed Pen",
       "itemid": "TrinketID: 130",
       "pickup": "\"It's leaking\"",
+			"quality": "Quality: 3",
       "moreDesc": "Tears have a chance to slow enemies\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6653,6 +6782,7 @@ var Isaac = {
       "name": "Blessed Penny",
       "itemid": "TrinketID: 131",
       "pickup": "\"Wealth of purity\"",
+			"quality": "Quality: 4",
       "moreDesc": "Chance to spawn half a soul heart when picking up a coin\nThe chance scales up based on the coin's worth: Penny = 16.66%, Double Penny = 30.5%, Nickel = 59.7%, Dime = 83.3%\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating ??? as Bethany"
     },
@@ -6660,6 +6790,7 @@ var Isaac = {
       "name": "Broken Syringe",
       "itemid": "TrinketID: 132",
       "pickup": "\"Mystery medicine\"",
+			"quality": "Quality: 2",
       "moreDesc": "Gives you a random syringe effect every room\nThe effect can be The Virus, Roid Rage, Speed Ball, Experimental Treatment, Synthoil, Euthanasia or Growth Hormones\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6667,6 +6798,7 @@ var Isaac = {
       "name": "Short Fuse",
       "itemid": "TrinketID: 133",
       "pickup": "\"Faster explosions\"",
+			"quality": "Quality: 0",
       "moreDesc": "Placed bombs explode after 0.66 seconds instead of the usual 1.5 seconds\nThis was called Exploded Firecracker in Antibirth\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6674,6 +6806,7 @@ var Isaac = {
       "name": "Gigante Bean",
       "itemid": "TrinketID: 134",
       "pickup": "\"Mega farts\"",
+			"quality": "Quality: 2",
       "moreDesc": "Farts produced by Isaac or familiars will be twice as large\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6681,6 +6814,7 @@ var Isaac = {
       "name": "A Lighter",
       "itemid": "TrinketID: 135",
       "pickup": "\"Watch the world burn\"",
+			"quality": "Quality: 3",
       "moreDesc": "Chance for enemies to burn when entering a room\nThe chance for this effect to activate is effected by your Luck stat\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6688,6 +6822,7 @@ var Isaac = {
       "name": "Broken Padlock",
       "itemid": "TrinketID: 136",
       "pickup": "\"Bombs are key\"",
+			"quality": "Quality: 3",
       "moreDesc": "Explosions can open locked doors\nThis includes key blocks and golden chests\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6695,6 +6830,7 @@ var Isaac = {
       "name": "Myosotis",
       "itemid": "TrinketID: 137",
       "pickup": "\"Forget me not...\"",
+			"quality": "Quality: 1",
       "moreDesc": "Pickups left on current floor will appear in the starting room of the next floor, up to a maximum of 4 pickups\n*, flower, blue, petal, leaf, mysotis\n",
       "unlock": "Available from the start"
     },
@@ -6702,6 +6838,7 @@ var Isaac = {
       "name": " 'M",
       "itemid": "TrinketID: 138",
       "pickup": "\"t's broken9Reroll your dest       \"",
+			"quality": "Quality: 2",
       "moreDesc": "Active items will be rerolled upon using them\nUsing with Book of Virtues will only reroll the item the book is holding\nHas no effect with Notched Axe due to how its durability works\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Eden"
     },
@@ -6709,6 +6846,7 @@ var Isaac = {
       "name": "Teardrop Charm",
       "itemid": "TrinketID: 139",
       "pickup": "\"It feels lucky\"",
+			"quality": "Quality: 2",
       "moreDesc": "Random luck-based tear effects have an extra chance of occurring\nThe additional chance is effectively +3 Luck Up\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6716,6 +6854,7 @@ var Isaac = {
       "name": "Apple of Sodom",
       "itemid": "TrinketID: 140",
       "pickup": "\"It feels empty\"",
+			"quality": "Quality: 1",
       "moreDesc": "Picking up red hearts now has a high chance to spawn 1-4 blue attack spiders, instead of giving you health back\nThis effect also works while fully healed, giving a guaranteed chance of getting spiders\nWhile missing any red health the chance for spiders is less\nWorks for characters that don't use red health, which always gives you spiders\nHearts in Shops can be converted into spiders for free\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6723,6 +6862,7 @@ var Isaac = {
       "name": "Forgotten Lullaby",
       "itemid": "TrinketID: 141",
       "pickup": "\"Sing for your friends\"",
+			"quality": "Quality: 2",
       "moreDesc": "Gives your familiars improved rate of fire while held\nIn Antibirth this trinket was called Song of the Siren\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by bombing the skull left by The Siren boss after her death"
     },
@@ -6730,6 +6870,7 @@ var Isaac = {
       "name": "Beth's Faith",
       "itemid": "TrinketID: 142",
       "pickup": "\"My faith protects me\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held at the start of each floor, this trinket spawns four wisp familiar orbitals around Isaac\nThese wisps are the same as the ones created by the Book of Virtues item\n*, beths faith\n",
       "unlock": "UNLOCK: Unlock this trinket by beating the Boss Rush as Bethany"
     },
@@ -6737,6 +6878,7 @@ var Isaac = {
       "name": "Old Capacitor",
       "itemid": "TrinketID: 143",
       "pickup": "\"Voltage starving\"",
+			"quality": "Quality: 1",
       "moreDesc": "Your active item no longer gains charges, but battery drops become much more common\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by blowing up 10 Battery Beggars"
     },
@@ -6744,6 +6886,7 @@ var Isaac = {
       "name": "Brain Worm",
       "itemid": "TrinketID: 144",
       "pickup": "\"Ding!\"",
+			"quality": "Quality: 3",
       "moreDesc": "Tears that miss enemies will redirect themselves and travel 90 degrees towards enemies\nTears must be roughly 2 tiles or closer to activate this effect\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6751,6 +6894,7 @@ var Isaac = {
       "name": "Perfection",
       "itemid": "TrinketID: 145",
       "pickup": "\"Luck way up. Don't lose it!\"",
+			"quality": "Quality: 4",
       "moreDesc": "+10 Luck while held, but the trinket is destroyed when damage is taken\nBlood donation machines, Curse Rooms and Sacrifice Rooms wont destroy it\nTaking a hit and activating Holy Mantle won't destroy it\nCan be dropped in order to avoid breaking it\nThis trinket is automatically given to you after clearing 3 bosses without taking damage\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6758,6 +6902,7 @@ var Isaac = {
       "name": "Devil's Crown",
       "itemid": "TrinketID: 146",
       "pickup": "\"His special customer\"",
+			"quality": "Quality: 2",
       "moreDesc": "Treasure Rooms are replaced with Red Treasure Rooms, which contain a deal with the devil in place of a regular item pedestal\nIf an item room has not yet been entered, it can be transformed to either a regular or Red Treasure Room by picking up or dropping this trinket before entering\nDoes not affect the mirrored treasure room in Downpour II\n*, devils crown\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Azazel"
     },
@@ -6765,6 +6910,7 @@ var Isaac = {
       "name": "Charged Penny",
       "itemid": "TrinketID: 147",
       "pickup": "\"Wealth of power\"",
+			"quality": "Quality: 3",
       "moreDesc": "Every time you pick up a coin, you have a small chance to gain 1 bar of charge on your active item\nThe chance for this effect to happen is 1/6th of the value of the coin picked up\nCan only activate once per coin collected\nIn Antibirth this trinket was called Electric Penny\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by donating to a battery beggar until he pays out with an item 5 times"
     },
@@ -6772,6 +6918,7 @@ var Isaac = {
       "name": "Friendship Necklace",
       "itemid": "TrinketID: 148",
       "pickup": "\"Gather round\"",
+			"quality": "Quality: 1",
       "moreDesc": "While held, your familiars will now orbit around Isaac instead of following behind him\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6779,6 +6926,7 @@ var Isaac = {
       "name": "Panic Button",
       "itemid": "TrinketID: 149",
       "pickup": "\"Push in case of emergency\"",
+			"quality": "Quality: 2",
       "moreDesc": "Activates your active item just before damage would be taken\nIt doesn't activate for free - the charges are used up as normal if this effect activates. This means the trinket does nothing if your active item isn't fully charged\nSingle-use active items are consumed as normal\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6786,6 +6934,7 @@ var Isaac = {
       "name": "Blue Key",
       "itemid": "TrinketID: 150",
       "pickup": "\"Look between the rooms\"",
+			"quality": "Quality: 1",
       "moreDesc": "Doors can be opened without using up a key\nHowever, when entering the door you are taken to a blue womb room with enemies to defeat. This room will always drop a reward at the end, then allow you to exit back to the real floor\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating The Beast as Tainted Cain"
     },
@@ -6793,6 +6942,7 @@ var Isaac = {
       "name": "Flat File",
       "itemid": "TrinketID: 151",
       "pickup": "\"No more spikes\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held this trinket causes spikes to retract into the floor\nWorks for curse rooms - you no longer take damage entering or leaving\nAllows you to open spiked chests without taking damage\n*, \n",
       "unlock": "Available from the start"
     },
@@ -6800,6 +6950,7 @@ var Isaac = {
       "name": "Telescope Lens",
       "itemid": "TrinketID: 152",
       "pickup": "\"Seek the stars\"",
+			"quality": "Quality: 1",
       "moreDesc": "+9% chance for a Planetarium to spawn\nAllows Planetariums to spawn in the Womb/Utero floors\nPlanetarium have a base 1% chance to appear, which increases by +20% whenever you skip an Item Room (Must not enter to count as skipped)\nAfter entering a Planetarium the chance goes back to 1%. Holding this trinket increase that chance by +15%\nDoes not drop in Greed Mode\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by collecting three of the following in the same run: Magic 8 Ball, Tiny Planet, Crystal Ball, Star of Bethlehem or any of the Astrology-related items (e.g. Aries, Cancer, Capricorn, Leo etc.). The item called Zodiac does not count."
     },
@@ -6807,6 +6958,7 @@ var Isaac = {
       "name": "Mom's Lock",
       "itemid": "TrinketID: 153",
       "pickup": "\"A piece of her love\"",
+			"quality": "Quality: 2",
       "moreDesc": "Has a high chance to give you the effect of a random Mom item every room\n*, moms lock\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Isaac"
     },
@@ -6814,6 +6966,7 @@ var Isaac = {
       "name": "Dice Bag",
       "itemid": "TrinketID: 154",
       "pickup": "\"Bonus roll\"",
+			"quality": "Quality: 2",
       "moreDesc": "Every time you enter a brand new room, you have a chance to get a random one-time use Dice (e.g. D6, D20 etc.)\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Isaac"
     },
@@ -6821,6 +6974,7 @@ var Isaac = {
       "name": "Holy Crown",
       "itemid": "TrinketID: 155",
       "pickup": "\"Walk the path of the saint\"",
+			"quality": "Quality: 4",
       "moreDesc": "Causes Item rooms and Shops to appear in the Cathedral\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Magdalene"
     },
@@ -6828,6 +6982,7 @@ var Isaac = {
       "name": "Mother's Kiss",
       "itemid": "TrinketID: 156",
       "pickup": "\"HP up\"",
+			"quality": "Quality: 3",
       "moreDesc": "While held you get +1 HP Up\nThe first time you pick this trinket up, the heart container will be filled. This effect can't be abused - next time it will be empty if dropped\n*, mothers kiss\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Magdalene"
     },
@@ -6835,6 +6990,7 @@ var Isaac = {
       "name": "Torn Card",
       "itemid": "TrinketID: 157",
       "pickup": "\"Death awaits\"",
+			"quality": "Quality: 2",
       "moreDesc": "Every 15 shots you will shoot an Ipecac + My Reflection shot\nThe tear will fly in the air for about 3 seconds and follows Isaac until it falls and explodes. You need to move out of the way or it will hurt Isaac, but can be used to open anything requiring a bomb e.g. Secret Rooms\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Lazarus"
     },
@@ -6842,6 +6998,7 @@ var Isaac = {
       "name": "Torn Pocket",
       "itemid": "TrinketID: 158",
       "pickup": "\"A hole in your pocket\"",
+			"quality": "Quality: 0",
       "moreDesc": "Every time you take damage, you drop up to 2 different types of consumables on the ground\nDropped consumables can be any variant of its kind - e.g. a bomb can become a troll bomb, or a dropped coin can become a dime\nDoes nothing if you have no consumables\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Lazarus"
     },
@@ -6849,6 +7006,7 @@ var Isaac = {
       "name": "Gilded Key",
       "itemid": "TrinketID: 159",
       "pickup": "\"Less is more\"",
+			"quality": "Quality: 2",
       "moreDesc": "All new chests become locked Golden chests\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Cain"
     },
@@ -6856,6 +7014,7 @@ var Isaac = {
       "name": "Lucky Sack",
       "itemid": "TrinketID: 160",
       "pickup": "\"Free goodies!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Spawns a sack at the start of each new floor\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Cain"
     },
@@ -6863,6 +7022,7 @@ var Isaac = {
       "name": "Wicked Crown",
       "itemid": "TrinketID: 161",
       "pickup": "\"Walk the path of the wicked\"",
+			"quality": "Quality: 4",
       "moreDesc": "Causes an Item Room and Shop to appear in Sheol\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Azazel"
     },
@@ -6870,6 +7030,7 @@ var Isaac = {
       "name": "Azazel's Stump",
       "itemid": "TrinketID: 162",
       "pickup": "\"Unleash your inner demon\"",
+			"quality": "Quality: 3",
       "moreDesc": "When entering a new room, gives a small chance to gain Azazel's short-range Brimstone laser for the current room and the ability to fly\n*, azazels stump\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Azazel"
     },
@@ -6877,6 +7038,7 @@ var Isaac = {
       "name": "Dingle Berry",
       "itemid": "TrinketID: 163",
       "pickup": "\"Oops!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Spawns 2 friendly Dips upon clearing a room\nDips that spawn after killing a Squirt turn friendly\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Blue Baby"
     },
@@ -6884,6 +7046,7 @@ var Isaac = {
       "name": "Ring Cap",
       "itemid": "TrinketID: 164",
       "pickup": "\"Twice the bang!\"",
+			"quality": "Quality: 3",
       "moreDesc": "Drops 2 bombs at once (only 1 bomb is removed from your total)\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Blue Baby"
     },
@@ -6891,6 +7054,7 @@ var Isaac = {
       "name": "Nuh Uh!",
       "itemid": "TrinketID: 165",
       "pickup": "\"Don't want!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Beyond the womb floor, replaces all coin and key spawns with a random pickup as follows:\nBomb - 26.6% chance. Heart - 26.6% chance\nPill - 16.6% chance. Card - 16.6% chance\nTrinket - 6.6% chance. Battery - 6.6% chance\nAlso adds a 20% chance to spawn a fly if the original drop was a coin\nDoesn't spawn in Greed Mode\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Eden"
     },
@@ -6898,6 +7062,7 @@ var Isaac = {
       "name": "Modeling Clay",
       "itemid": "TrinketID: 166",
       "pickup": "\"???\"",
+			"quality": "Quality: 1",
       "moreDesc": "Each brand new room, this trinket has a chance to transform into a copy of a random passive item, which gives you the effect for the duration of this room\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Eden"
     },
@@ -6905,6 +7070,7 @@ var Isaac = {
       "name": "Polished Bone",
       "itemid": "TrinketID: 167",
       "pickup": "\"Friends from beyond\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives a small chance to spawn a friendly Bony when clearing a room, which will throw bones at enemies until it takes enough damage to die\nCan be either the regular white Bony or the black variant\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Forgotten"
     },
@@ -6912,6 +7078,7 @@ var Isaac = {
       "name": "Hollow Heart",
       "itemid": "TrinketID: 168",
       "pickup": "\"A brittle blessing\"",
+			"quality": "Quality: 4",
       "moreDesc": "Gives you +1 Bone Heart every time you enter a new floor\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Forgotten"
     },
@@ -6919,6 +7086,7 @@ var Isaac = {
       "name": "Kid's Drawing",
       "itemid": "TrinketID: 169",
       "pickup": "\"Looks familiar...\"",
+			"quality": "Quality: 2",
       "moreDesc": "Counts as 1 of 3 cat items needed towards the Guppy transformation\nDropping this trinket again removes the transformation if you dont have 3 other Guppy items\n*, kids drawing\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Lost"
     },
@@ -6926,6 +7094,7 @@ var Isaac = {
       "name": "Crystal Key",
       "itemid": "TrinketID: 170",
       "pickup": "\"Call to the other side\"",
+			"quality": "Quality: 4",
       "moreDesc": "Each time you clear a room there is a chance a Red Room will spawn at one of the walls.\nThe chance for a Red Room to unlock increases as you pick up more Crystal Keys.\nWhile in a regular room, the chances to spawn a Red Room are: 1 Key = 33.33% chance. 2 keys = 50% chance. 3 or more keys = 100% chance.\nWhile in a Red room, the chances to spawn a Red Room are: 1 Key = 12.5% chance. 2 keys = 16.6% chance. 3 keys = 25% chance. 4 keys = 50% chance. 5 keys = 100% chance.\nPassive rooms with no enemies don't have a chance to spawn Red Rooms.\nIt's possible to hold more than one trinket by taking Mom's Purse, Belly Button or using the Smelter to convert them into passive items. Having a golden version of this trinket counts as 2 keys.\nDoesn't spawn in Greed Mode\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Lost"
     },
@@ -6933,6 +7102,7 @@ var Isaac = {
       "name": "Keeper's Bargain",
       "itemid": "TrinketID: 171",
       "pickup": "\"Money talks\"",
+			"quality": "Quality: 2",
       "moreDesc": "Has a decent chance for Devil Deals to cost money instead of Health\nThe conversion rate is 1 heart container to 15 coins\nItems can be on discount similar to the shop, making it 1 heart container = 7 coins instead\nNo effect on Lost or Tainted Lost\nCan be dropped to disable this effect while in the room\n*, keepers bargain, keeper bargain\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Keeper"
     },
@@ -6940,6 +7110,7 @@ var Isaac = {
       "name": "Cursed Penny",
       "itemid": "TrinketID: 172",
       "pickup": "\"Wealth of misery\"",
+			"quality": "Quality: 0",
       "moreDesc": "While held, you will be teleported to a random room everytime you pick up a coin\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Keeper"
     },
@@ -6947,6 +7118,7 @@ var Isaac = {
       "name": "Your Soul",
       "itemid": "TrinketID: 173",
       "pickup": "\"Give it to me\"",
+			"quality": "Quality: 2",
       "moreDesc": "Allows you to pay for a devil deal with this trinket\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Judas"
     },
@@ -6954,6 +7126,7 @@ var Isaac = {
       "name": "Number Magnet",
       "itemid": "TrinketID: 174",
       "pickup": "\"6\"",
+			"quality": "Quality: 4",
       "moreDesc": "+10% devil room chance while held\nChanges Devil Room layouts. The new rooms contain 0-3 Devil Deal Items, 1-3 Black Hearts and random enemies from the Sheol floor\nPrevents Krampus from appearing\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Judas"
     },
@@ -6961,6 +7134,7 @@ var Isaac = {
       "name": "Strange Key",
       "itemid": "TrinketID: 175",
       "pickup": "\"What could it open?\"",
+			"quality": "Quality: 2",
       "moreDesc": "Opens the door to the Blue Womb, regardless of whether you meet the 30 minute speed timer\nOpening Pandora's Box while holding this item will ignore the normal effect and instead spawn 6 item pedestals from random item pools. Both the box and trinket are consumed when this happens\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Eve"
     },
@@ -6968,6 +7142,7 @@ var Isaac = {
       "name": "Lil Clot",
       "itemid": "TrinketID: 176",
       "pickup": "\"Mini friend\"",
+			"quality": "Quality: 3",
       "moreDesc": "A small clot friend will hug Isaac, following his exact movements (similar to how Jacob & Esau work) and shooting tears when he does\nThe clot can be moved around by collision with an object/wall, allowing you to re-position it\nThe clot's damage is roughly 1/3 of your tear damage\nIf it takes a few hits it will die, and respawn in the next room\n*, mini clot\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Eve"
     },
@@ -6975,6 +7150,7 @@ var Isaac = {
       "name": "Temporary Tattoo",
       "itemid": "TrinketID: 177",
       "pickup": "\"You feel braver\"",
+			"quality": "Quality: 3",
       "moreDesc": "Spawns a random chest after completing a regular Challenge Room\nSpawns a pedestal item after completing a boss Challenge Room\nDoesn't spawn in Greed Mode\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Samson"
     },
@@ -6982,6 +7158,7 @@ var Isaac = {
       "name": "Swallowed M80",
       "itemid": "TrinketID: 178",
       "pickup": "\"Bang!\"",
+			"quality": "Quality: 2",
       "moreDesc": "When taking damage you have a chance to explode and deal 185 damage to all enemies around you (Same damage as a Mr. Mega bomb)\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Samson"
     },
@@ -6989,6 +7166,7 @@ var Isaac = {
       "name": "RC Remote",
       "itemid": "TrinketID: 179",
       "pickup": "\"Controllable buddies!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Familiars follow Isaac's exact movements, (similar to how Jacob & Esau work) instead of following loosely like they usually do\nHolding the drop button (Ctrl on Steam version) causes them to stop moving\nDoesn't affect some familiars with specific movement patterns, e.g. Abel\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Jacob"
     },
@@ -6996,6 +7174,7 @@ var Isaac = {
       "name": "Found Soul",
       "itemid": "TrinketID: 180",
       "pickup": "\"Finally!\"",
+			"quality": "Quality: 2",
       "moreDesc": "Gives you a familiar that follows Isaac's exact movements (similar to how Jacob & Esau work) and shoots spectral tears\nSimilar to Jacob and Esau, positions can be altered by running it into objects, or holding the drop button (Ctrl on Steam version)\nWhen you place a bomb, the Found Soul will drop one too\nIf it takes any damage, it will die and not respawn until the next floor\nWill always match your current movement speed\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Jacob"
     },
@@ -7003,6 +7182,7 @@ var Isaac = {
       "name": "Expansion Pack",
       "itemid": "TrinketID: 181",
       "pickup": "\"Fun extras\"",
+			"quality": "Quality: 0",
       "moreDesc": "Everytime you use your active item, you have a chance to activate another random active item\nGlowing Hourglass effect is blocked from this item\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Bethany"
     },
@@ -7010,6 +7190,7 @@ var Isaac = {
       "name": "Beth's Essence",
       "itemid": "TrinketID: 182",
       "pickup": "\"Virtue's reward\"",
+			"quality": "Quality: 1",
       "moreDesc": "Taking damage gives you a chance to spawn a flame orbital, similar to the ones created by Book of Virtues\nEntering an Angel Room gives you +5 flame orbitals. The angel room spawned by The Stairway item also counts\nGiving money to a beggar gives a flame orbital\n*, beths essence\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Bethany"
     },
@@ -7017,6 +7198,7 @@ var Isaac = {
       "name": "The Twins",
       "itemid": "TrinketID: 183",
       "pickup": "\"I'm seeing double...\"",
+			"quality": "Quality: 2",
       "moreDesc": "Upon entering each new room, this trinket has a chance to copy one of your current familiars\nIf you have no familiars instead it will spawn either Brother Bobby or Sister Maggy\nOnly lasts for the current room\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Lilith"
     },
@@ -7024,6 +7206,7 @@ var Isaac = {
       "name": "Adoption Papers",
       "itemid": "TrinketID: 184",
       "pickup": "\"Give them a home\"",
+			"quality": "Quality: 2",
       "moreDesc": "All shops only sell familiars while holding this trinket\nIf you enter a shop while holding this trinket, the effect won't undo by dropping it until you move to a new floor\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Lilith"
     },
@@ -7031,6 +7214,7 @@ var Isaac = {
       "name": "Cricket Leg",
       "itemid": "TrinketID: 185",
       "pickup": "\"Infested\"",
+			"quality": "Quality: 3",
       "moreDesc": "Every time an enemy dies you have a chance to gain a random Locust\nDifferent color Locusts correspond to the horsemen. Each of them deal double your tear damage, similar to how standard blue flies work\nWar (Red) - Explodes when touching the enemy. The actual explosion deals flat 60 damage\nPestilence (Green) - Poisons the enemy it attacks\nFamine (Brown) - Applies a slowing effect\nDeath (Black) - Deals x4 damage instead of x2\nConquest (White) - Spawns 2-5 at once\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Apollyon"
     },
@@ -7038,6 +7222,7 @@ var Isaac = {
       "name": "Apollyon's Best Friend",
       "itemid": "TrinketID: 186",
       "pickup": "\"Attack buddy\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives you a red attack fly, that will charge at enemies in the same direction you are shooting\nDeals damage equal to your current tear damage\nStops charging once it hits an enemy and returns to Isaac's side\n*, apollyons best friend\n",
       "unlock": "UNLOCK: Unlock this trinket by defeating Mother as Tainted Apollyon"
     },
@@ -7045,6 +7230,7 @@ var Isaac = {
       "name": "Broken Glasses",
       "itemid": "TrinketID: 187",
       "pickup": "\"Double vision?\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives a 33% chance to spawn an extra blind pedestal item in all future item rooms. This one will be a hidden question mark\nAllows you to see what both items are on alternative path floors (Downpour/Dross, Mines/Ashpit, Gehenna/Mausoleum)\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating challenge #40 (Seeing Double)"
     },
@@ -7052,6 +7238,7 @@ var Isaac = {
       "name": "Ice Cube",
       "itemid": "TrinketID: 188",
       "pickup": "\"Stay frosty\"",
+			"quality": "Quality: 3",
       "moreDesc": "Gives a small chance when entering a room for enemies to be petrified for 4 seconds. Killing a petrified enemy will freeze it.\nThe chance for this effect to activate depends on your Luck stat.\nFrozen enemies can be pushed into obstacles where they shatter on contact and fire ice shards around them. Any other enemies hit by these shards will become frozen too\nFrozen enemies are considered dead by the game, and won't unfreeze or move again. The room doors will open if only frozen enemies remain\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating challenge #41 (Pica Run)"
     },
@@ -7059,6 +7246,7 @@ var Isaac = {
       "name": "Sigil of Baphomet",
       "itemid": "TrinketID: 189",
       "pickup": "\"Revel in death\"",
+			"quality": "Quality: 4",
       "moreDesc": "Every time you kill an enemy you get an invincibility shield for 1 second\nWhile shielded, each enemy killed adds +1 seconds to the duration\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating challenge #37 (Bloody Mary)"
     }
