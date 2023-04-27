@@ -1,0 +1,45 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Each item's parent div */
+.item-container {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 2%;
+	width: 10%;
+	height: 20vh;
+	overflow: hidden;
+}
+
+.item-container:hover {
+
+}
+
+#popup.active {
+	height: 100vh;
+	width: 100vw;
+	background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#popup-body.active {
+	visibility: inherit;
+	height: 50%;
+	width: 25%;
+	background-color: grey;
+}
+
+.item-desc {
+	overflow-y: hidden;
+}
+
+#items {
+	display: flex;
+	flex-wrap: wrap;
+}
