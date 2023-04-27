@@ -81,10 +81,11 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	pickupNode.appendChild(_pickup);
 	
 	// Description
-	let descNode = document.createElement("p");
+	/*let descNode = document.createElement("p");
 	let _desc = document.createTextNode(moreDesc);
 	descNode.appendChild(_desc);
 	descNode.className = "item-desc";
+	*/
 
 	// Unlock
 	let unlockNode = document.createElement("p");
@@ -94,7 +95,7 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	// Appending them all to itemNode and returning it
 	itemNode.appendChild(nameNode);
 	itemNode.appendChild(pickupNode);
-	itemNode.appendChild(descNode);
+	//itemNode.appendChild(descNode);
 	itemNode.appendChild(unlockNode);
 
 	itemNode.addEventListener("click", (event) => {
