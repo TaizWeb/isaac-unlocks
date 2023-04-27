@@ -138,7 +138,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	let pickupNode = document.createElement("p");
 	let _pickup = document.createTextNode(pickup);
 	pickupNode.appendChild(_pickup);
-	
+
 	// Description
 	let descNode = document.createElement("p");
 	let _desc = document.createTextNode(moreDesc);
@@ -188,12 +188,26 @@ function checkQuality(item, source) {
 
 // checkBosses: Returns if any of the currently active boss checkboxes are involved in the unlock of $item
 function checkBosses(item, source) {
+	// Platinum god is incredibly inconsistent with how it names things, for example "beating" is sometimes "defeating", bosses are sometimes spoilered (e.g. instead of saying "beating The Lamb" it'll say "beating the Dark Room")
+	// ALSO it sometimes capitalizes stuff like "The" in The Chest, or sometimes it doesn't have a "the" at all depending on which description
+	// As a result, I'm going with regex
 	if (source[item].unlock.search("Unlock") < 0) return false;
 	for (let boss in currentBoss) {
-		if (currentBoss[boss]) {
-			console.log(boss);
-			if ((source[item].unlock.indexOf("beating " + boss) > 0) ||
-				 (source[item].unlock.indexOf("defeating " + boss) > 0)) return true;
+		if (currentBoss[boss]) { // If the current boss is actively checked...
+			let regexStr = "(beating|defeating) (the )?"; // Platgod inconsistency failsafe
+			switch (boss) { // More plat god inconsistency failsafes
+				case "The Lamb":
+					regexStr += "Lamb|Dark Room";
+					break;
+				case "???":
+					regexStr += "Chest|\\?\\?\\?";
+					break;
+				default:
+					regexStr += boss;
+			}
+
+			let regex = new RegExp(regexStr, "ig"); // Making it lowercase (you already know why)
+			return (source[item].unlock.match(regex) != null); // Return true if found
 		}
 	}
 	return false;
