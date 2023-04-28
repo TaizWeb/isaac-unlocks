@@ -10,10 +10,12 @@ html, body {
 	border-color: black;
 	border-width: 1px;
 	border-radius: 2%;
-	width: 10%;
+	width: 13%;
 	height: 30vh;
 	overflow: hidden;
 	padding: .5em;
+	margin: auto;
+	margin-bottom: 1em;
 }
 
 .item-title {
@@ -28,10 +30,6 @@ html, body {
 .item-pickup {
 	text-align: center;
 	font-style: italic;
-}
-
-.item-container:hover {
-
 }
 
 #popup.active {
@@ -72,5 +70,16 @@ html, body {
 #items {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 20%;
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+	.item-container {
+		width: 25%;
+	}
+
+	#popup-body.active {
+		width: 80%;
+		height: 40%;
+	}
+}

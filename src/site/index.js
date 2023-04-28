@@ -126,7 +126,6 @@ popup.addEventListener("click", (event) => {
 // If the inner is clicked, keep it
 popupBody.addEventListener("click", (event) => {
 	dismissClick = false;
-	//popup.className = "";
 });
 
 function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
