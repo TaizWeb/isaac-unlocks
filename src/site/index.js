@@ -1,5 +1,6 @@
 const itemsContainer = document.getElementById("items");
 const trinketsContainer = document.getElementById("trinkets");
+const challengesContainer = document.getElementById("challenges");
 const quality = document.getElementById("quality");
 let detailsPopup = false;
 const bossClears = {
@@ -15,7 +16,8 @@ const bossClears = {
 	"clearGreed": document.getElementById("boss_greed"),
 	"clearGreedier": document.getElementById("boss_greedier"),
 	"clearBeast": document.getElementById("boss_beast"),
-	"clearHeart": document.getElementById("boss_heart")
+	"clearHeart": document.getElementById("boss_heart"),
+	"clearChallenges": document.getElementById("boss_challenges")
 }
 const currentBoss = {
 	"Satan": false,
@@ -30,7 +32,8 @@ const currentBoss = {
 	"Greed": false,
 	"Greedier": false,
 	"The Beast": false,
-	"Mom's Heart": false
+	"Mom's Heart": false,
+	"Challenge": false
 }
 const bossHTMLtoJS = {
 	"boss_satan": "Satan",
@@ -45,7 +48,8 @@ const bossHTMLtoJS = {
 	"boss_greed": "Greed",
 	"boss_greedier": "Greedier",
 	"boss_beast": "The Beast",
-	"boss_heart": "Mom's Heart"
+	"boss_heart": "Mom's Heart",
+	"boss_challenges": "Challenge"
 }
 
 let currentQuality = 0;
@@ -179,12 +183,19 @@ function renderItems() {
 	}
 	// Render trinkets
 	trinketsContainer.innerHTML = "";
-	//let splitter = document.createElement("hr");
-	//trinketsContainer.appendChild(splitter);
 	for (let item in Isaac.trinkets) {
 		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets)) {
 			let itemInfo = Isaac.trinkets[item];
 			trinketsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
+		}
+	}
+
+	// Render challenges
+	challengesContainer.innerHTML = "";
+	for (let item in Isaac.usables) {
+		if (/*checkQuality(item, Isaac.usables) */ checkBosses(item, Isaac.usables)) {
+			let itemInfo = Isaac.usables[item];
+			challengesContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
 	}
 }

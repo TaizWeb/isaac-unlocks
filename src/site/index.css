@@ -79,7 +79,13 @@ h2 {
 #trinkets {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 20%;
+}
+
+/* TODO: Possible consolodate these */
+#challenges {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50%;
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
