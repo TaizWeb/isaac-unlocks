@@ -7250,5 +7250,685 @@ var Isaac = {
       "moreDesc": "Every time you kill an enemy you get an invincibility shield for 1 second\nWhile shielded, each enemy killed adds +1 seconds to the duration\n*, \n",
       "unlock": "UNLOCK: Unlock this trinket by defeating challenge #37 (Bloody Mary)"
     }
+  },
+  "usables": {
+    "O - The Fool": {
+      "name": "O - The Fool",
+      "itemid": "CardID: 1",
+      "moreDesc": "Teleports the player to the first room of the current floor\nThere is a guaranteed Fool card in the Depths 2, if you bomb the skull with an X on it. This is intended give you a guaranteed way to teleport out of the Mom's Foot fight, for accessing the path to the Mausoleum floor\n*, tarot, card, green \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Where your journey begins\""
+    },
+    "I - The Magician": {
+      "name": "I - The Magician",
+      "itemid": "CardID: 2",
+      "moreDesc": "For the current room, tears now have the Spoon Bender effect, which allows them to curve towards enemies and gives them a pur\u0440le appearance.\n      \n*, tarot, card, yellow \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you never miss your goal\""
+    },
+    "II - The High Priestess": {
+      "name": "II - The High Priestess",
+      "itemid": "CardID: 3",
+      "moreDesc": "Summons Mom's foot which will stomp on a random enemy in the current room, dealing 300 damage\nIf no enemies are in the current room, the foot will target Isaac (and do damage if it hits), however it can be used to break rocks\n*, tarot, card, red \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Mother is watching you\""
+    },
+    "III - The Empress": {
+      "name": "III - The Empress",
+      "itemid": "CardID: 4",
+      "moreDesc": "Gives the player the Whore of Babylon effect for the current room, increasing damage and speed\n* speed up, tarot, card, blue, red\n",
+      "unlock": "Available from the start",
+      "pickup": "\"May your rage bring power\""
+    },
+    "IV - The Emperor": {
+      "name": "IV - The Emperor",
+      "itemid": "CardID: 5",
+      "moreDesc": "Teleports the player to the Boss room on the current floor\n*, tarot, card, yellow \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Challenge me!\""
+    },
+    "V - The Hierophant": {
+      "name": "V - The Hierophant",
+      "itemid": "CardID: 6",
+      "moreDesc": "Spawns 2 Soul hearts on the floor\n*, the lost item pool, tarot, card, blue, red\n",
+      "unlock": "Available from the start",
+      "pickup": "\"Two prayers for the lost\""
+    },
+    "VI - The Lovers": {
+      "name": "VI - The Lovers",
+      "itemid": "CardID: 7",
+      "moreDesc": "Spawns 2 red hearts on the floor\nIf used in a Super Secret Room containing a Black Heart or Eternal Heart, it will spawn those types of hearts instead\n* , the lost item pool, tarot, card, red\n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you prosper and be in good health\""
+    },
+    "VII - The Chariot": {
+      "name": "VII - The Chariot",
+      "itemid": "CardID: 8",
+      "moreDesc": "Grants the same effect as 'My Little Unicorn', which makes Isaac invincible and deal 40 contact damage to enemies per hit\n*, tarot, card, yellow\n",
+      "unlock": "Available from the start",
+      "pickup": "\"May nothing stand before you\""
+    },
+    "VIII - Justice": {
+      "name": "VIII - Justice",
+      "itemid": "CardID: 9",
+      "moreDesc": "Spawns 1 bomb, 1 key, 1 coin, 1 heart, which can be random variants of each\n*, tarot, card, red \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May your future become balanced\""
+    },
+    "IX - The Hermit": {
+      "name": "IX - The Hermit",
+      "itemid": "CardID: 10",
+      "moreDesc": "Teleports the player to the Shop\nOn or below the Womb, this acts as a random teleport, since there are no shops on those floors\n*, tarot, card, blue \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you see what life has to offer\""
+    },
+    "X - Wheel of Fortune": {
+      "name": "X - Wheel of Fortune",
+      "itemid": "CardID: 11",
+      "moreDesc": "Spawns a Slot Machine or a Fortune Machine\n*, tarot, card, pink \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Spin the wheel of destiny\""
+    },
+    "XI - Strength": {
+      "name": "XI - Strength",
+      "itemid": "CardID: 12",
+      "moreDesc": "Gives the player the Magic Mushroom effect, which increasing size and all stats by 1 for the current room\nIf you use the Strength card with 12 heart containers, it will take you down to 11 when you leave the room\n*, tarot, card, pink \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May your power bring rage\""
+    },
+    "XII - The Hanged Man": {
+      "name": "XII - The Hanged Man",
+      "itemid": "CardID: 13",
+      "moreDesc": "Gives the player the flying effect for the current room, allowing the player to fly over obstacles in the room\nThis card is useless if you have any item which allows you to permanently fly\n* , the lost item pool, tarot, card, grey, gray\n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you find enlightenment\""
+    },
+    "XIII - Death": {
+      "name": "XIII - Death",
+      "itemid": "CardID: 14",
+      "moreDesc": "Deals 40 damage to all enemies in the room in a similar style to the Necronomicon\n*, tarot, card, grey, gray \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Lay waste to all that oppose you\""
+    },
+    "XIV - Temperance": {
+      "name": "XIV - Temperance",
+      "itemid": "CardID: 15",
+      "moreDesc": "Spawns a Blood Donation Machine\n* , the lost item pool, tarot, card, red, blue\n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you be pure in heart\""
+    },
+    "XV - The Devil": {
+      "name": "XV - The Devil",
+      "itemid": "CardID: 16",
+      "moreDesc": "Gives the Book of Belial effect for the current room, increasing damage\n* damage up, tarot, card, red \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Revel in the power of your darkness\""
+    },
+    "XVI - The Tower": {
+      "name": "XVI - The Tower",
+      "itemid": "CardID: 17",
+      "moreDesc": "Spawns some troll bombs at random locations in the current room\nEach bomb deals 60 damage (normal bomb damage\n*, tarot, card, purple \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Destruction brings creation\""
+    },
+    "XVII - The Stars": {
+      "name": "XVII - The Stars",
+      "itemid": "CardID: 18",
+      "moreDesc": "Teleports the player to the Item Room\nOn or below the Womb, this acts as a random teleport, since there are no item rooms on those floors\n*, tarot, card, blue \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you find what you desire\""
+    },
+    "XVIII - The Moon": {
+      "name": "XVIII - The Moon",
+      "itemid": "CardID: 19",
+      "moreDesc": "Teleports the player to the Secret Room\n*, tarot, card, blue \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May you find all you have lost\""
+    },
+    "XIX - The Sun": {
+      "name": "XIX - The Sun",
+      "itemid": "CardID: 20",
+      "moreDesc": "A card with three uses: A full heal, deals 100 damage to all enemies in the current room and reveals the entire map for the current floor (Treasure Map + The Compass)\n*, tarot, card, yellow \n",
+      "unlock": "Available from the start",
+      "pickup": "\"May the light heal and enlighten you\""
+    },
+    "XX - Judgement": {
+      "name": "XX - Judgement",
+      "itemid": "CardID: 21",
+      "moreDesc": "Spawns a beggar\nHas a chance to be a demon beggar\nKilling a Devil Beggar, Key Master, or Shell Game Beggar gives you an increased chance of finding Angel rooms instead of Devil rooms. See the dedicated Devil room page for more details\n*, tarot, card, blue \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Judge lest ye be judged\""
+    },
+    "XXI - The World": {
+      "name": "XXI - The World",
+      "itemid": "CardID: 22",
+      "moreDesc": "Reveals the entire map and shows the icons for every room which has one\nThis is completely useless if you currently have both the Treasure Map and The Compass\n*, tarot, card, pink \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Open your eyes and see\""
+    },
+    "2 of Clubs": {
+      "name": "2 of Clubs",
+      "itemid": "CardID: 23",
+      "moreDesc": "Doubles the number of Bombs you have\nIf you have no bombs, it gives you two\n*, playing, card, white, black \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Item multiplier\""
+    },
+    "2 of Diamonds": {
+      "name": "2 of Diamonds",
+      "itemid": "CardID: 24",
+      "moreDesc": "Doubles the number of coins you have\nIf you have no coins, it gives you two\n*, playing, card, white, red \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Item multiplier\""
+    },
+    "2 of Spades": {
+      "name": "2 of Spades",
+      "itemid": "CardID: 25",
+      "moreDesc": "Doubles the number of keys you have\nIf you have no keys, it gives you two\n*, playing, card, white, black \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Item multiplier\""
+    },
+    "2 of Hearts": {
+      "name": "2 of Hearts",
+      "itemid": "CardID: 26",
+      "moreDesc": "Doubles your current red hearts up to full health\nThis card is useless for the Blu\u0435 Baby\n* , the lost item pool, playing, card, white, red\n",
+      "unlock": "Available from the start",
+      "pickup": "\"Item multiplier\""
+    },
+    "Ace of Clubs": {
+      "name": "Ace of Clubs",
+      "itemid": "CardID: 27",
+      "moreDesc": "When used, turns all pickups, chests and non-boss enemies in the room into Bombs\n*, playing, card, white, black \n",
+      "unlock": "UNLOCK: Unlock this item by getting a 3 win streak",
+      "pickup": "\"Convert all\""
+    },
+    "Ace of Diamonds": {
+      "name": "Ace of Diamonds",
+      "itemid": "CardID: 28",
+      "moreDesc": "When used, turns all pickups, chests and non-boss enemies in the room into Coins\n*, playing, card, white, red \n",
+      "unlock": "UNLOCK: Unlock this item by defeating The Lamb in under 20 minutes",
+      "pickup": "\"Convert all\""
+    },
+    "Ace of Spades": {
+      "name": "Ace of Spades",
+      "itemid": "CardID: 29",
+      "moreDesc": "When used, turns all pickups, chests and non-boss enemies in the room into Keys\n*, playing, card, white, black \n",
+      "unlock": "UNLOCK: Unlock this item by defeating The Lamb without taking hearts, coins and bombs",
+      "pickup": "\"Convert all\""
+    },
+    "Ace of Hearts": {
+      "name": "Ace of Hearts",
+      "itemid": "CardID: 30",
+      "moreDesc": "When used, turns all pickups, chests and non-boss enemies in the room into Hearts\n*, playing, card, white, red \n",
+      "unlock": "UNLOCK: Unlock this item by defeating any floor after Basement I with only half a heart of health (works as The Lost)",
+      "pickup": "\"Convert all\""
+    },
+    "The Joker": {
+      "name": "The Joker",
+      "itemid": "CardID: 31",
+      "moreDesc": "Teleports you to the Devil Deal Room on the current floor\n*, playing, card, white, black \n",
+      "unlock": "Available from the start",
+      "pickup": "\"???\""
+    },
+    "Rune of Hagalaz": {
+      "name": "Rune of Hagalaz",
+      "itemid": "CardID: 32",
+      "moreDesc": "When used, this rune will destroy all breakable objects in the current room, such as poop, rocks, secret room entrances\nThis includes Key Blocks\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #1 (Pitch Black)",
+      "pickup": "\"Destruction\""
+    },
+    "Rune of Jera": {
+      "name": "Rune of Jera",
+      "itemid": "CardID: 33",
+      "moreDesc": "When used this rune will double all pickups on the floor in the room\nCreates copies of pickups in the Shop which can be taken for free, even if you haven't purchased them yet\nCan be used to double the number of item chests in the first room of the final Chest / Dark Room floors\nCloned chests have the same types of items as the first one\nCannot be used to clone trinkets or other Jera runes\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #2 (High Brow)",
+      "pickup": "\"Abundance\""
+    },
+    "Rune of Ehwaz": {
+      "name": "Rune of Ehwaz",
+      "itemid": "CardID: 34",
+      "moreDesc": "Creates a trapdoor on the floor\nDigging in certain spots with objects or markings on the floor will guarantee a crawlspace once per floor\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #3 (Head Trauma)",
+      "pickup": "\"Passage\""
+    },
+    "Rune of Dagaz": {
+      "name": "Rune of Dagaz",
+      "itemid": "CardID: 35",
+      "moreDesc": "Removes the curse which is in effect on the current floor (except Curse of the Labyrinth)\nCan also cure the effect of the Amnesia pill\n+1 Soul Heart\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #4 (Darkness Falls)",
+      "pickup": "\"Purity\""
+    },
+    "Rune of Ansuz": {
+      "name": "Rune of Ansuz",
+      "itemid": "CardID: 36",
+      "moreDesc": "When used, reveals the entire map including all the secret room locations and other icon rooms\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #5 (The Tank)",
+      "pickup": "\"Vision\""
+    },
+    "Rune of Perthro": {
+      "name": "Rune of Perthro",
+      "itemid": "CardID: 37",
+      "moreDesc": "Rerolls all pedestal items in the current room (One time use of the D6)\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #6 (Solar System)",
+      "pickup": "\"Change\""
+    },
+    "Rune of Berkano": {
+      "name": "Rune of Berkano",
+      "itemid": "CardID: 38",
+      "moreDesc": "Summons 3 blue friendly spiders and 3 blue flies\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #20 (Purist)",
+      "pickup": "\"Companionship\""
+    },
+    "Rune of Algiz": {
+      "name": "Rune of Algiz",
+      "itemid": "CardID: 39",
+      "moreDesc": "When used, gives you an invincibility effect which lasts for 20 seconds\n*, purple, glow \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #8 (Cat Got Your Tongue)",
+      "pickup": "\"Resistance\""
+    },
+    "Blank Rune": {
+      "name": "Blank Rune",
+      "itemid": "CardID: 40",
+      "moreDesc": "When used, gives a random Mystic rune effect\nPossible effects include: Algiz, Ansuz, Berkano, Dagaz, Ehwaz, Hagalaz, Jera, Perthro\nAlso has a 25% chance to spawn another Blank Rune upon use\n* \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #30 (Guardian)",
+      "pickup": "\"???\""
+    },
+    "Black Rune": {
+      "name": "Black Rune",
+      "itemid": "CardID: 41",
+      "moreDesc": "When used, this rune deals 40 damage to all enemies in the room and consumes all pedestal items in the room, giving you a random stat increase for each item consumed\nAlso consumes all pickups in the room and turns them into blue flies and spiders\n*, rock, black \n",
+      "unlock": "UNLOCK: Unlock this item by beating Greedier mode as Apollyon",
+      "pickup": "\"Void\""
+    },
+    "Chaos Card": {
+      "name": "Chaos Card",
+      "itemid": "CardID: 42",
+      "moreDesc": "A card which can be thrown as a projectile directly infront of Isaac, instantly killing anything it hits, including most bosses\nIf thrown at a multi-phase boss with multiple forms such Satan, Mega Satan or Hush it will only kill that particular phase of the boss\nIf thrown at a multi-phase boss that works from a single health bar such as Isaac, ??? or The Lamb, it will die instantly\nWill not kill Delirium or The Beast\nWill destroy rocks and poop in its path\nCan also be thrown against a door to open it (Doesn't work against Mega Satan's door)\nThrowing this at the Great Gideon boss will trigger a special animation and reveal a crawl space containing several chests and items!\n*, mtg, card, magic, gathering, brown \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #9 (Demo Man)",
+      "pickup": "\"???\""
+    },
+    "Credit Card": {
+      "name": "Credit Card",
+      "itemid": "CardID: 43",
+      "moreDesc": "When used, removes the price tag from all items in the current shop or devil deal, making everything free\nThe effect of the Credit Card only lasts for the current room\n*, blue, green \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #10 (Cursed!)",
+      "pickup": "\"Charge it!\""
+    },
+    "Rules Card": {
+      "name": "Rules Card",
+      "itemid": "CardID: 44",
+      "moreDesc": "Displays a random cryptic message on the screen similar to the fortune machine ones. One of the following messages may show:\n\"Rooms may yield more than you expect\"\n\"Some doors require a blessing. Carry them with you\"\n\"The walls will harden over time. Time is the essence\"\n\"Sleeping gatekeepers will need to be awoken with a loud sound\"\n\"A piece of paper is your guide\"\n\"Deny his gifts to attain your reward\"\n\"A dark market lies under your feet\n\"Chub dislikes smoke!\n*, white, black, writing \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #11 (Glass Cannon)",
+      "pickup": "\"???\""
+    },
+    "Card Against Humanity": {
+      "name": "Card Against Humanity",
+      "itemid": "CardID: 45",
+      "moreDesc": "When used, fills the entire room with poop!\n*, black, white, writing \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #12 (When Life Gives You Lemons)",
+      "pickup": "\"Something stinks...\""
+    },
+    "Suicide King": {
+      "name": "Suicide King",
+      "itemid": "CardID: 46",
+      "moreDesc": "When used, instantly kills you and spawns 10 pickup on the floor\nEach of the 10 things spawned can be any type of consumable or sometimes a pedestal item (up to a maximum of 3 pedestal items)\nAny pedestal item created by Suicide King will be related to the room where it was used, meaning that using it in the Angel room will spawn Angel room items\n*, white, blue, red \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #7 (Suicide King)",
+      "pickup": "\"A true ending?\""
+    },
+    "Get Out Of Jail Free Card": {
+      "name": "Get Out Of Jail Free Card",
+      "itemid": "CardID: 47",
+      "moreDesc": "When used, will open all doors in the current room, similar to a one-time use of Dad's Key\n*, brown, orange \n",
+      "unlock": "UNLOCK: Unlock this card by beating Challenge #22 (Speed)",
+      "pickup": "\"Open sesame\""
+    },
+    "? Card": {
+      "name": "? Card",
+      "itemid": "CardID: 48",
+      "moreDesc": "When used this card will activate a use of your spacebar item for free\n*, black, white, question, mark \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Double active\""
+    },
+    "Dice Shard": {
+      "name": "Dice Shard",
+      "itemid": "CardID: 49",
+      "moreDesc": "Gives a one-time use of the D6 and D20 effects at the same time\n*, purple, broken, pip \n",
+      "unlock": "Available from the start"
+    },
+    "Emergency Contact": {
+      "name": "Emergency Contact",
+      "itemid": "CardID: 50",
+      "moreDesc": "When used will cause two of Mom's Hand to come down and grab a random enemy\n*, mom, brown, paper, shop room pool \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Help from above\""
+    },
+    "Holy Card": {
+      "name": "Holy Card",
+      "itemid": "CardID: 51",
+      "moreDesc": "Grants the Holy Mantle effect for, which will negate your next hit of damage\nThe effect persist between rooms/floors\nTainted Lost starts with this card, and while playing as this character all cards and runes have a 10% chance to turn into a Holy Card\n*, playing, card, white, cross, blue \n",
+      "unlock": "UNLOCK: Unlock this item by defeating Delirium in The Void floor with The Lost",
+      "pickup": "\"You feel protected\""
+    },
+    "Huge Growth": {
+      "name": "Huge Growth",
+      "itemid": "CardID: 52",
+      "moreDesc": "Temporarily makes Isaac huge, giving him +7 Damage Up and +30 Range Up for the rest of the current room\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Coper140\n*, mtg, card, magic, gathering, green, brown, giant growth\n",
+      "unlock": "UNLOCK: Unlock this item by getting 5 items or consumables that increase your size, e.g. 'One Makes you Larger' pills, Magic Mushroom etc",
+      "pickup": "\"Become immense!\""
+    },
+    "Ancient Recall": {
+      "name": "Ancient Recall",
+      "itemid": "CardID: 53",
+      "moreDesc": "Spawns 3 random cards on the floor when used\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Coper140\n*, mtg, card, magic, gathering, blue \n",
+      "unlock": "Available from the start",
+      "pickup": "\"Draw 3 cards\""
+    },
+    "Era Walk": {
+      "name": "Era Walk",
+      "itemid": "CardID: 54",
+      "moreDesc": "When used, this card will slow down enemies, Isaac's tears by -1 Shot Speed, but speed up Isaac's movement speed by +0.50 for the rest of the current room\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Coper140\n*, mtg, card, magic, gathering, blue \n",
+      "unlock": "UNLOCK: Unlock this item by getting both the Broken Watch and the Stop Watch in your collection",
+      "pickup": "\"Savor the moment\""
+    },
+    "Rune Shard": {
+      "name": "Rune Shard",
+      "itemid": "CardID: 55",
+      "moreDesc": "Activates a random rune effect. The effect is weaker than normal runes.\nThese only appear if not all runes have been unlocked yet.\n*, shart\n",
+      "unlock": "Available from the start",
+      "pickup": "\"It still glows faintly\""
+    },
+    "O - The Fool?": {
+      "name": "O - The Fool?",
+      "itemid": "CardID: 56",
+      "moreDesc": "When used, this card drops all of your hearts (including non-red hearts), coins, keys and bombs on the floor\nThis effect is done in the most efficient way possible - e.g. if you have 99 coins it will create 3 x Quarters, 2 Dimes and 4 Pennies. If you have 40 bombs it will spawn 4 x Boom! pedestal items\nPicking up all dropped items leaves you with the same health and consumables you had before\nThis allows you to manipulate your consumables in lots of different ways, for example by rerolling them with the D6/D20, re-arrange your Bone heart containers and more\nIf you have the Tarot Cloth item, this card will also drop all your passive items on the floor as pedestals\n*, tarot, card, green \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Lost",
+      "pickup": "\"Let go and move on\""
+    },
+    "I - The Magician?": {
+      "name": "I - The Magician?",
+      "itemid": "CardID: 57",
+      "moreDesc": "Gives you a blue aura that repels enemy projectiles, causing them to slowly curve away from Isaac and avoid hitting him\nLasts for 60 seconds\n*, tarot, card, yellow \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Judas",
+      "pickup": "\"May no harm come to you\""
+    },
+    "II - The High Priestess?": {
+      "name": "II - The High Priestess?",
+      "itemid": "CardID: 58",
+      "moreDesc": "Causes Mom's Foot to keep stomping down randomly for 60 seconds where Isaac is standing\n*, tarot, card, red \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Lilith",
+      "pickup": "\"Run\""
+    },
+    "III - The Empress?": {
+      "name": "III - The Empress?",
+      "itemid": "CardID: 59",
+      "moreDesc": "Gives 2 HP Up and +1.5 Tears Up for 60 seconds\n* speed up, tarot, card, blue, red\n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Eve",
+      "pickup": "\"May your love bring protection\""
+    },
+    "IV - The Emperor?": {
+      "name": "IV - The Emperor?",
+      "itemid": "CardID: 60",
+      "moreDesc": "Teleports you to an extra boss room, that drops a Boss room item as normal. This room isn't part of the actual floor, and leaving it returns you to where you teleported from\nThe boss isn't necessarily from the current floor - e.g. you could find a caves boss in the basement\n*, tarot, card, yellow \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted ???",
+      "pickup": "\"May you find a worthy opponent\""
+    },
+    "V - The Hierophant?": {
+      "name": "V - The Hierophant?",
+      "itemid": "CardID: 61",
+      "moreDesc": "Spawns 2 Bone hearts on the floor\n*, the lost item pool, tarot, card, blue, red\n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Bethany",
+      "pickup": "\"Two prayers for the forgotten\""
+    },
+    "VI - The Lovers?": {
+      "name": "VI - The Lovers?",
+      "itemid": "CardID: 62",
+      "moreDesc": "Spawns a random pedestal item from the current room's item pool\nIn exchange, turns one heart container or 2 soul hearts into a broken heart. Broken hearts permanently subtract from your total possible health containers\n* , the lost item pool, tarot, card, red\n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Magdalene",
+      "pickup": "\"May your heart shatter to pieces\""
+    },
+    "VII - The Chariot?": {
+      "name": "VII - The Chariot?",
+      "itemid": "CardID: 63",
+      "moreDesc": "Isaac turns to stone and can't move for 10 seconds, but your tear rate goes up significantly for the duration\n*, tarot, card, yellow\n",
+      "unlock": "UNLOCK: Unlock this card by defeating challenge #42 (Hot Potato)",
+      "pickup": "\"May nothing walk past you\""
+    },
+    "VIII - Justice?": {
+      "name": "VIII - Justice?",
+      "itemid": "CardID: 64",
+      "moreDesc": "Spawns 2-4 locked gold chests\n*, tarot, card, red \n",
+      "unlock": "UNLOCK: Unlock this card by defeating challenge #43 (Cantripped)",
+      "pickup": "\"May your sins come back to torment you\""
+    },
+    "IX - The Hermit?": {
+      "name": "IX - The Hermit?",
+      "itemid": "CardID: 65",
+      "moreDesc": "When used, all items and pickups in the current room are turned into money. Everything is sold for its shop price, e.g. Items for 15c, hearts for 3c, sacks for 7c\n*, tarot, card, blue \n",
+      "unlock": "UNLOCK: Unlock this card by defeating challenge #44 (Red Redemption)",
+      "pickup": "\"May you see the value of all things in life\""
+    },
+    "X - Wheel of Fortune?": {
+      "name": "X - Wheel of Fortune?",
+      "itemid": "CardID: 66",
+      "moreDesc": "Activates a random effect from a Dice room\nSee the dice icon above for each possible effect\n*, tarot, card, pink \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Cain",
+      "pickup": "\"Throw the dice of fate\""
+    },
+    "XI - Strength?": {
+      "name": "XI - Strength?",
+      "itemid": "CardID: 67",
+      "moreDesc": "All enemies in the current room are slowed and take double damage\n*, tarot, card, pink \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Samson",
+      "pickup": "\"May you break their resolve\""
+    },
+    "XII - The Hanged Man?": {
+      "name": "XII - The Hanged Man?",
+      "itemid": "CardID: 68",
+      "moreDesc": "You turn into the Keeper, gaining triple shot, -0.1 Speed Down for 30 seconds\nEnemies drop random coins while this effect is active\n* , the lost item pool, tarot, card, grey, gray\n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Keeper",
+      "pickup": "\"May your greed know no bounds\""
+    },
+    "XIII - Death?": {
+      "name": "XIII - Death?",
+      "itemid": "CardID: 69",
+      "moreDesc": "Activates the Book of the Dead effect, spawning a bone orbital or charmed Bony for each enemy killed in the current room\n*, tarot, card, grey, gray \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Forgotten",
+      "pickup": "\"May life spring forth from the fallen\""
+    },
+    "XIV - Temperance?": {
+      "name": "XIV - Temperance?",
+      "itemid": "CardID: 70",
+      "moreDesc": "When used, this card activates 5 random pill effects one after the other\n* , the lost item pool, tarot, card, red, blue\n",
+      "unlock": "UNLOCK: Unlock this card by defeating challenge #45 (DELETE THIS)",
+      "pickup": "\"May your hunger be satiated\""
+    },
+    "XV - The Devil?": {
+      "name": "XV - The Devil?",
+      "itemid": "CardID: 71",
+      "moreDesc": "Activates The Bible effect (granting flight) and gives a Seraphim familiar for 30 seconds\n* damage up, tarot, card, red \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Azazel",
+      "pickup": "\"Bask in the light of your mercy\""
+    },
+    "XVI - The Tower?": {
+      "name": "XVI - The Tower?",
+      "itemid": "CardID: 72",
+      "moreDesc": "Spawns 6 clusters of rocks and objects that normally appear on this floor\nIt won't block any doors that exist\nRocks have a pretty good chance to become tinted rocks\n*, tarot, card, purple \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Apollyon",
+      "pickup": "\"Creation brings destruction\""
+    },
+    "XVII - The Stars?": {
+      "name": "XVII - The Stars?",
+      "itemid": "CardID: 73",
+      "moreDesc": "Removes your oldest item and spawns 2 pedestal items from the current room's pool\nCan remove either passive or active items\nDoesn't remove your character's starting items\n*, tarot, card, blue \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Isaac",
+      "pickup": "\"May your loss bring fortune\""
+    },
+    "XVIII - The Moon?": {
+      "name": "XVIII - The Moon?",
+      "itemid": "CardID: 74",
+      "moreDesc": "Teleports you to the ultra secret room on the floor\nThe ultra secret room is a red room containing an item from the angel room item pool. Can only be accessed via the Red Key, Crystal Key or Cracked Key. Using this card will also open a pathway of red rooms back to the regular floor\n*, tarot, card, blue \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Jacob",
+      "pickup": "\"May you remember lost memories\""
+    },
+    "XIX - The Sun?": {
+      "name": "XIX - The Sun?",
+      "itemid": "CardID: 75",
+      "moreDesc": "When used, grants +1.5 Damage Up, turns your hearts to Bone hearts and the Spirit of the Night effect (Spectral tears and the ability to fly) for the current floor\nAlso gives the Curse of Darkness effect that can't be removed for the current floor\n*, tarot, card, yellow \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Jacob",
+      "pickup": "\"May the darkness swallow all around you\""
+    },
+    "XX - Judgement?": {
+      "name": "XX - Judgement?",
+      "itemid": "CardID: 76",
+      "moreDesc": "Spawns a Restock machine\n*, tarot, card, blue \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Lazarus",
+      "pickup": "\"May you redeem those found wanting\""
+    },
+    "XXI - The World?": {
+      "name": "XXI - The World?",
+      "itemid": "CardID: 77",
+      "moreDesc": "Creates a trapdoor to a guaranteed crawl space\n*, tarot, card, pink \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Ultra Greedier mode as Tainted Eden",
+      "pickup": "\"Step into the abyss\""
+    },
+    "Cracked Key": {
+      "name": "Cracked Key",
+      "itemid": "CardID: 78",
+      "moreDesc": "This is a one-time use of the Red Key item.\nThe main purpose of the Cracked Key is to unlock Tainted character in the Home floor without needing to find the Red Key. You can force spawn a cracked key by droping any trinket in a Boss Room or Item room, on any floor on your way down to Depths II. When you take the reverse path back up to Home, the trinket will turn into Cracked Key in the same floor/room you dropped it before.\n*, Red Key Shard \n",
+      "unlock": "UNLOCK: Unlock this card by opening Mom's Box on the Home floor.",
+      "pickup": "\"???\""
+    },
+    "Queen of Hearts": {
+      "name": "Queen of Hearts",
+      "itemid": "CardID: 79",
+      "moreDesc": "Drops 1-20 full red hearts on the floor\n*, \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Mega Satan as Tainted Magdalene",
+      "pickup": "\"<3\""
+    },
+    "Wild Card": {
+      "name": "Wild Card",
+      "itemid": "CardID: 80",
+      "moreDesc": "When used, this copies the effect of the card, pill, rune, soul stone or active item you used most recently\n*, Uno Card \n",
+      "unlock": "UNLOCK: Unlock this card by defeating Mega Satan as Tainted Eden",
+      "pickup": "\"Again\""
+    },
+    "Soul of Isaac": {
+      "name": "Soul of Isaac",
+      "itemid": "CardID: 81",
+      "moreDesc": "Turns all pedestal items in the current room into rotating items, which cycle between the old item and a random new item every second\nThis allows you to effectively reroll items like with The D6, but choose the old item as well if you want\nTainted Isaac has this effect passively for all items\nIf you use more than one in the same room, each pedestal item will cycle through +1 random item\nItems are chosen from the item pool related to the current item\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Isaac",
+      "pickup": "\"Reroll... or not\""
+    },
+    "Soul of Magdalene": {
+      "name": "Soul of Magdalene",
+      "itemid": "CardID: 82",
+      "moreDesc": "When used, all enemies in the current room drop half a red heart that will disappear after 2 seconds if not picked up\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Magdalene",
+      "pickup": "\"Give me your love!\""
+    },
+    "Soul of Cain": {
+      "name": "Soul of Cain",
+      "itemid": "CardID: 83",
+      "moreDesc": "When used, this Soul Stone creates Red rooms for every possible exit in the current room\nRed outlines of doors appear where this Soul Stone will create exits for\nSee the Red Key item description for more information about these Red rooms behave\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Cain",
+      "pickup": "\"Opens the unopenable\""
+    },
+    "Soul of Judas": {
+      "name": "Soul of Judas",
+      "itemid": "CardID: 84",
+      "moreDesc": "Activates the Dark Arts item effect, which turns Isaac into a ghost for a few seconds. While in this form you can walk over enemies to mark them for death. After a few seconds, he will quickly attack each target, chaining higher damage for each enemy it hits\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Judas",
+      "pickup": "\"Right behind you\""
+    },
+    "Soul of ???": {
+      "name": "Soul of ???",
+      "itemid": "CardID: 85",
+      "moreDesc": "When used this will cause 8 poison farts that leave a brown creep behind, and then drop 7 Butt Bombs very quickly\nStanding in the creep gives you +1 Damage Up and +1.35 Tears Up\n* Soul of Blue Baby\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Blue Baby",
+      "pickup": "\"Chemical warfare\""
+    },
+    "Soul of Eve": {
+      "name": "Soul of Eve",
+      "itemid": "CardID: 86",
+      "moreDesc": "For the current room, 14 Dead Birds fly in from off the screen and attack all enemies, dealing low but frequent damage\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Eve",
+      "pickup": "\"Your very own murder\""
+    },
+    "Soul of Samson": {
+      "name": "Soul of Samson",
+      "itemid": "CardID: 87",
+      "moreDesc": "Isaac gains the Berserk! effect for 10 seconds. This gives Isaac a bone sword and he goes on a killing rampage, gaining +0.4 Speed, +3 Flat Damage Up\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Samson",
+      "pickup": "\"Slay a thousand\""
+    },
+    "Soul of Azazel": {
+      "name": "Soul of Azazel",
+      "itemid": "CardID: 88",
+      "moreDesc": "Activates the Mega Blast item effect, which gives you a giant laser that deals x5 your tear damage per tick to anything in its path and pushing Isaac back by the force\nThe effect lasts for 8 seconds but does persist between rooms\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Azazel",
+      "pickup": "\"Demon rage!\""
+    },
+    "Soul of Lazarus": {
+      "name": "Soul of Lazarus",
+      "itemid": "CardID: 89",
+      "moreDesc": "When used this kills Isaac and revives him with 1/2 a red heart. You get a couple of seconds of invincibility to move away after\nThe main benefit of this Soul Stone is that it automatically activates if you die, meaning it is effectively an extra passive life while held\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Lazarus",
+      "pickup": "\"Life after death\""
+    },
+    "Soul of Eden": {
+      "name": "Soul of Eden",
+      "itemid": "CardID: 90",
+      "moreDesc": "Activates the D6 and D20 effects, rerolling all items and pickups in the room. Unlike the regular D6, rerolled items can pick from any item pool\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Eden",
+      "pickup": "\"Embrace chaos\""
+    },
+    "Soul of the Lost": {
+      "name": "Soul of the Lost",
+      "itemid": "CardID: 91",
+      "moreDesc": "When used, Isaac dies and becomes The Lost for the current room. This gives you his ability to fly, and the Holy Mantle effect. However if you take damage a second time you die like the Lost does\nSame effect as touching a white fire, but only lasts one room\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Lost",
+      "pickup": "\"Leave your body behind\""
+    },
+    "Soul of Lilith": {
+      "name": "Soul of Lilith",
+      "itemid": "CardID: 92",
+      "moreDesc": "Gives you 1 random permanent familiar\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Lilith",
+      "pickup": "\"Motherhood\""
+    },
+    "Soul of the Keeper": {
+      "name": "Soul of the Keeper",
+      "itemid": "CardID: 93",
+      "moreDesc": "Spawns up to 25 random coins on the floor\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Keeper",
+      "pickup": "\"$$$\""
+    },
+    "Soul of Apollyon": {
+      "name": "Soul of Apollyon",
+      "itemid": "CardID: 94",
+      "moreDesc": "Creates 15 random Locusts\nLocusts are variants of blue flies, except they have special effects based on the color\nWar (Red) - Explodes when touching the enemy. The actual explosion deals flat 60 damage\nPestilence (Green) - Poisons the enemy it attacks\nFamine (Brown) - Applies a slowing effect\nDeath (Black) - Deals x4 damage instead of x2\nConquest (White) - Spawns 2-5 at once\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Apollyon",
+      "pickup": "\"Bringer of calamity\""
+    },
+    "Soul of the Forgotten": {
+      "name": "Soul of the Forgotten",
+      "itemid": "CardID: 95",
+      "moreDesc": "Gives you The Forgotten as a temporary familiar, with 2 Bone hearts and his bone weapon. He behaves the same as how Esau works with Jacob, following your exact movements\nDisappears after the current room or if he takes enough damage and dies\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Forgotten",
+      "pickup": "\"Skeletal protector\""
+    },
+    "Soul of Bethany": {
+      "name": "Soul of Bethany",
+      "itemid": "CardID: 96",
+      "moreDesc": "Creates 6 wisps, similar to the Book of Virtues effect\nMosts wisps will be the standard blue ones, but have a chance to have random special properties\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Bethany",
+      "pickup": "\"Friends from beyond\""
+    },
+    "Soul of Jacob and Esau": {
+      "name": "Soul of Jacob and Esau",
+      "itemid": "CardID: 97",
+      "moreDesc": "Spawns Esau as a temporary familiar, who copies your exact movements the same as how the Jacob & Esau character works\nDisappears after the current room or if he takes enough damage and dies\n* Soul Stone\n",
+      "unlock": "UNLOCK: Unlock this item by defeating Hush and Boss Rush as Tainted Jacob",
+      "pickup": "\"Bound by blood\""
+    }
   }
 }
