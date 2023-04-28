@@ -193,7 +193,7 @@ function renderItems() {
 	// Render challenges
 	challengesContainer.innerHTML = "";
 	for (let item in Isaac.usables) {
-		if (/*checkQuality(item, Isaac.usables) */ checkBosses(item, Isaac.usables)) {
+		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables)) {
 			let itemInfo = Isaac.usables[item];
 			challengesContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
