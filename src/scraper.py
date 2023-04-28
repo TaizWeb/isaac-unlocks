@@ -24,8 +24,11 @@ def scrapeActives(container, DBterm):
 
 	for item in itemsList:
 		# Grab the exposed HTML data
-		name = item.find_all("p", {"class": "item-title"})[0].contents[0]
-		itemid = item.find_all("p", {"class": "r-itemid"})[0].contents[0]
+		try: # If it reaches the end of the cards, or otherwise breaks, abort
+			name = item.find_all("p", {"class": "item-title"})[0].contents[0]
+			itemid = item.find_all("p", {"class": "r-itemid"})[0].contents[0]
+		except:
+			break
 
 		# Failsafe for lack of pickup text
 		if (item.find_all("p", {"class": "pickup"}) != []):
