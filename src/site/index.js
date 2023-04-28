@@ -1,4 +1,5 @@
 const itemsContainer = document.getElementById("items");
+const trinketsContainer = document.getElementById("trinkets");
 const quality = document.getElementById("quality");
 let detailsPopup = false;
 const bossClears = {
@@ -177,12 +178,13 @@ function renderItems() {
 		}
 	}
 	// Render trinkets
-	let splitter = document.createElement("hr");
-	itemsContainer.appendChild(splitter);
+	trinketsContainer.innerHTML = "";
+	//let splitter = document.createElement("hr");
+	//trinketsContainer.appendChild(splitter);
 	for (let item in Isaac.trinkets) {
 		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets)) {
 			let itemInfo = Isaac.trinkets[item];
-			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
+			trinketsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
 	}
 }

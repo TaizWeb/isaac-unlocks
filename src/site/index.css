@@ -4,6 +4,10 @@ html, body {
 	padding: 0;
 }
 
+h2 {
+	text-align: center;
+}
+
 /* Each item's parent div */
 .item-container {
 	border-style: solid;
@@ -68,6 +72,11 @@ html, body {
 }
 
 #items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#trinkets {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 20%;
