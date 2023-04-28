@@ -69,11 +69,18 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	itemNode.className = "item-container";
 	// Name
 	let nameNode = document.createElement("p");
-	let _name = document.createTextNode(name + " [" + quality + "]");
+	nameNode.className = "item-title";
+	let _name = document.createTextNode(name);
 	nameNode.appendChild(_name);
+
+	let qualityNode = document.createElement("p");
+	qualityNode.className = "item-quality";
+	let _quality = document.createTextNode("[" + quality + "]");
+	qualityNode.appendChild(_quality);
 
 	// Pickup
 	let pickupNode = document.createElement("p");
+	pickupNode.className = "item-pickup";
 	let _pickup = document.createTextNode(pickup);
 	pickupNode.appendChild(_pickup);
 
@@ -91,6 +98,7 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 
 	// Appending them all to itemNode and returning it
 	itemNode.appendChild(nameNode);
+	itemNode.appendChild(qualityNode);
 	itemNode.appendChild(pickupNode);
 	//itemNode.appendChild(descNode);
 	itemNode.appendChild(unlockNode);
@@ -128,16 +136,19 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	itemNode.className = "popup-container";
 	// Name
 	let nameNode = document.createElement("p");
+	nameNode.className = "popup-title";
 	let _name = document.createTextNode(name + " [" + quality + "]");
 	nameNode.appendChild(_name);
 
 	// Pickup
 	let pickupNode = document.createElement("p");
+	pickupNode.className = "popup-pickup";
 	let _pickup = document.createTextNode(pickup);
 	pickupNode.appendChild(_pickup);
 
 	// Description
 	let descNode = document.createElement("p");
+	descNode.className = "popup-pickup";
 	let _desc = document.createTextNode(moreDesc);
 	descNode.appendChild(_desc);
 	descNode.className = "item-desc";

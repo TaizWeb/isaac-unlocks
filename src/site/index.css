@@ -13,6 +13,21 @@ html, body {
 	width: 10%;
 	height: 30vh;
 	overflow: hidden;
+	padding: .5em;
+}
+
+.item-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.item-quality {
+	text-align: center;
+}
+
+.item-pickup {
+	text-align: center;
+	font-style: italic;
 }
 
 .item-container:hover {
@@ -20,19 +35,34 @@ html, body {
 }
 
 #popup.active {
-	height: 100vh;
-	width: 100vw;
-	background-color: blue;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .9);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
 }
 
 #popup-body.active {
 	visibility: inherit;
 	height: 50%;
 	width: 25%;
-	background-color: grey;
+	background-color: white;
+	border: .25em solid lightblue;
+	border-radius: 2%;
+	padding: 1.5em;
+	word-wrap: normal;
+}
+
+.popup-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.popup-pickup {
+	text-align: center;
+	font-style: italic;
 }
 
 .item-desc {
@@ -43,3 +73,4 @@ html, body {
 	display: flex;
 	flex-wrap: wrap;
 }
+
