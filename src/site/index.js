@@ -1,4 +1,3 @@
-//console.log(Isaac.actives["The Sad Onion"].moreDesc);
 const itemsContainer = document.getElementById("items");
 const quality = document.getElementById("quality");
 let detailsPopup = false;
@@ -52,7 +51,6 @@ let currentQuality = 0;
 
 // Quality filter
 quality.addEventListener("change", (event) => {
-	console.log(event.target.value);
 	currentQuality = event.target.value;
 	renderItems();
 });
@@ -61,7 +59,6 @@ quality.addEventListener("change", (event) => {
 for (let _boss in bossClears) {
 	bossClears[_boss].addEventListener("change", (event) => {
 		currentBoss[bossHTMLtoJS[bossClears[_boss].name]] = event.target.checked;
-		console.log(bossClears[_boss].name + " is set to " + event.target.checked);
 		renderItems();
 	});
 }
@@ -207,7 +204,7 @@ function checkBosses(item, source) {
 			}
 
 			let regex = new RegExp(regexStr, "ig"); // Making it lowercase (you already know why)
-			return (source[item].unlock.match(regex) != null); // Return true if found
+			if (source[item].unlock.match(regex) != null) return true; // Return true if found
 		}
 	}
 	return false;
