@@ -2,6 +2,8 @@ const itemsContainer = document.getElementById("items");
 const trinketsContainer = document.getElementById("trinkets");
 const challengesContainer = document.getElementById("challenges");
 const quality = document.getElementById("quality");
+const hamburger = document.getElementById("hamburger-toggle");
+const navigation = document.getElementById("navigation");
 let detailsPopup = false;
 const bossClears = {
 	"clearSatan": document.getElementById("boss_satan"),
@@ -51,6 +53,14 @@ const bossHTMLtoJS = {
 	"boss_heart": "Mom's Heart",
 	"boss_challenges": "Challenge"
 }
+
+hamburger.addEventListener("click", (event) => {
+	console.log("CLICKED");
+	if (navigation.style.display == "flex")
+		navigation.style.display = "none";
+	else
+		navigation.style.display = "flex";
+});
 
 let currentQuality = 0;
 
