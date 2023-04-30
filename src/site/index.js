@@ -1,11 +1,19 @@
+// Main content
 const itemsContainer = document.getElementById("items");
 const trinketsContainer = document.getElementById("trinkets");
 const challengesContainer = document.getElementById("challenges");
+
+// Navigation
 const quality = document.getElementById("quality");
 const qualityLabel = document.getElementById("quality-label");
 const hamburger = document.getElementById("hamburger-toggle");
 const navigation = document.getElementById("navigation");
+
+// Navigation Buttons
 const bossAll = document.getElementById("boss_all");
+const taintedToggle = document.getElementById("tainted-toggle");
+const characterDeselect = document.getElementById("character-deselect");
+
 let detailsPopup = false;
 const bossClears = {
 	"clearSatan": document.getElementById("boss_satan"),
@@ -55,6 +63,26 @@ const bossHTMLtoJS = {
 	"boss_heart": "Mom's Heart",
 	"boss_challenges": "Challenge"
 }
+
+characterDeselect.addEventListener("click", (event) => {
+	let characters = document.getElementsByName("character-select");
+	for (let i=0; i < characters.length; i++) {
+		characters[i].checked = false;
+	}
+});
+
+taintedToggle.addEventListener("click", (event) => {
+	let characters = document.getElementsByName("character-select");	
+	for (let i=0; i < characters.length; i++) { // This could be more efficient rather than checking 17 times
+		if (characters[i].value[1] == ".") {
+			characters[i].value = characters[i].value.slice(3);
+			characters[i].labels[0].innerHTML = characters[i].value;
+		} else {
+			characters[i].value = "T. " + characters[i].value;
+			characters[i].labels[0].innerHTML = characters[i].value;
+		}
+	}
+});
 
 hamburger.addEventListener("click", (event) => {
 	if (navigation.style.display == "flex")
