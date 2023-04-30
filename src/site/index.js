@@ -98,7 +98,7 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	nameNode.appendChild(_name);
 
 	let qualityNode = document.createElement("p");
-	qualityNode.className = "item-quality";
+	qualityNode.className = "item-quality quality-" + quality.split(" ")[1];
 	let _quality = document.createTextNode("[" + quality + "]");
 	qualityNode.appendChild(_quality);
 
@@ -159,8 +159,8 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	itemNode.className = "popup-container";
 	// Name
 	let nameNode = document.createElement("p");
-	nameNode.className = "popup-title";
-	let _name = document.createTextNode(name + " [" + quality + "]");
+	nameNode.className = "popup-title quality-" + quality.split(" ")[1];
+	let _name = document.createTextNode(name);
 	nameNode.appendChild(_name);
 
 	// Pickup

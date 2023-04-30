@@ -20,7 +20,7 @@ h2 {
 	box-shadow: 10px 5px 10px grey;
 	margin-top: 3em;
 	z-index: 3;
-	/*overflow-y: scroll;*/
+	overflow-y: scroll;
 	position: fixed;
 	padding: 1em;
 	display: flex;
@@ -56,6 +56,26 @@ h2 {
 
 .item-quality {
 	text-align: center;
+}
+
+.quality-0 {
+	color: black;
+}
+
+.quality-1 {
+	color: blue;
+}
+
+.quality-2 {
+	color: lime;
+}
+
+.quality-3 {
+	color: red;
+}
+
+.quality-4 {
+	color: purple;
 }
 
 .item-pickup {
