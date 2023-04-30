@@ -139,9 +139,10 @@ h2 {
 /* Navigation */
 #navigation {
 	background-color: skyblue;
-	border: 1px solid black;
+	border-right: 1px solid black;
 	box-shadow: 10px 0px 10px grey;
 	margin-top: 3em;
+	z-index: 3;
 }
 
 /* Mobile */
