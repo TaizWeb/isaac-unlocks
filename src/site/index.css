@@ -2,6 +2,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	font-family: Sans-Serif;
 }
 
 h2 {
@@ -14,8 +15,20 @@ h2 {
 
 /* Sidebar */
 #navigation {
+	background-color: skyblue;
+	border-right: 1px solid black;
+	box-shadow: 10px 5px 10px grey;
+	margin-top: 3em;
+	z-index: 3;
+	/*overflow-y: scroll;*/
+	position: fixed;
+	padding: 1em;
 	display: flex;
 	flex-direction: column;
+}
+
+#quality-label {
+	font-weight: bold;
 }
 
 #navigation label {
@@ -110,7 +123,6 @@ h2 {
 	margin-bottom: 50%;
 }
 
-
 /* Top bar */
 #topbar {
 	height: fit-content;
@@ -136,16 +148,6 @@ h2 {
 	user-select: none;
 }
 
-/* Navigation */
-#navigation {
-	background-color: skyblue;
-	border-right: 1px solid black;
-	box-shadow: 10px 0px 10px grey;
-	margin-top: 3em;
-	z-index: 3;
-	overflow-y: scroll;
-	position: fixed;
-}
 
 /* Mobile */
 @media (min-width: 300px) and (max-width: 500px) {
