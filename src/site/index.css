@@ -15,6 +15,7 @@ h2 {
 
 /* Sidebar */
 #navigation {
+	height: calc(100vh - 5em);
 	background-color: skyblue;
 	border-right: 1px solid black;
 	box-shadow: 10px 5px 10px grey;
@@ -75,7 +76,7 @@ h2 {
 }
 
 .quality-4 {
-	color: purple;
+	color: blueviolet;
 }
 
 .item-pickup {
@@ -177,7 +178,6 @@ h2 {
 
 	#popup-body.active {
 		width: 80%;
-		height: 40%;
 	}
 
 	#navigation {
