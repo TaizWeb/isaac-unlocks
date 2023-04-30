@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Isaac Progression</title>
+		<title>BOI Unlock Guide</title>
 		<link rel="stylesheet" href="index.css"/>
 		<script src="isaac.js"></script>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -14,9 +14,8 @@
 		</div>
 		<div id="main-content">
 			<div id="navigation">
-				<label for="quality">Quality:</label>
+				<label for="quality" id="quality-label">Quality (0+)</label>
 				<input id="quality" name="quality" min="0" max="4" step="1" value="0" type="range" />
-				<br />
 				<div id="bosses-wrapper">
 					<h4>Bosses</h4>
 					<div id="boss_satan-wrapper">
@@ -75,6 +74,7 @@
 						<input id="boss_challenges" name="boss_challenges" type="checkbox" />
 						<label for="boss_challenges">Challenges</label>
 					</div>
+					<button id="boss_all" type="button">Toggle All</button>
 				</div>
 				<h4>Characters</h4>
 				<div id="characters-wrapper">
@@ -149,16 +149,16 @@
 				</div>
 			</div>
 			<div id="item-view">
-			<div id="popup" class=""><div id="popup-body" class=""></div></div>
-			<h2>Items</h2>
-			<hr/>
-			<div id="items"></div>
-			<h2>Trinkets</h2>
-			<hr/>
-			<div id="trinkets"></div>
-			<h2>Usables</h2>
-			<hr/>
-			<div id="challenges"></div>
+				<div id="popup" class=""><div id="popup-body" class=""></div></div>
+				<h2>Items</h2>
+				<hr/>
+				<div id="items"></div>
+				<h2>Trinkets</h2>
+				<hr/>
+				<div id="trinkets"></div>
+				<h2>Usables</h2>
+				<hr/>
+				<div id="challenges"></div>
 			</div>
 		</div>
 	</body>

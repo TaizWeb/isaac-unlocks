@@ -2,8 +2,10 @@ const itemsContainer = document.getElementById("items");
 const trinketsContainer = document.getElementById("trinkets");
 const challengesContainer = document.getElementById("challenges");
 const quality = document.getElementById("quality");
+const qualityLabel = document.getElementById("quality-label");
 const hamburger = document.getElementById("hamburger-toggle");
 const navigation = document.getElementById("navigation");
+const bossAll = document.getElementById("boss_all");
 let detailsPopup = false;
 const bossClears = {
 	"clearSatan": document.getElementById("boss_satan"),
@@ -55,11 +57,17 @@ const bossHTMLtoJS = {
 }
 
 hamburger.addEventListener("click", (event) => {
-	console.log("CLICKED");
 	if (navigation.style.display == "flex")
 		navigation.style.display = "none";
 	else
 		navigation.style.display = "flex";
+});
+
+bossAll.addEventListener("click", (event) => {
+	for (let _boss in bossClears) {
+		bossClears[_boss].checked = !bossClears[_boss].checked;
+		bossClears[_boss].dispatchEvent(new Event("change", {"bubbles":true}));
+	}
 });
 
 let currentQuality = 0;
@@ -67,6 +75,7 @@ let currentQuality = 0;
 // Quality filter
 quality.addEventListener("change", (event) => {
 	currentQuality = event.target.value;
+	qualityLabel.innerHTML = "Quality (" + currentQuality + "+)";
 	renderItems();
 });
 
