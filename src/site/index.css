@@ -37,7 +37,6 @@ h2 {
 }
 
 #popup.active {
-	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, .9);
 	display: flex;
@@ -48,13 +47,15 @@ h2 {
 
 #popup-body.active {
 	visibility: inherit;
-	height: 50%;
+	height: fit-content;
 	width: 25%;
 	background-color: white;
 	border: .25em solid lightblue;
 	border-radius: 2%;
 	padding: 1.5em;
 	word-wrap: normal;
+	position: fixed;
+	top: 20%;
 }
 
 .popup-title {
