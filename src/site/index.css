@@ -143,6 +143,8 @@ h2 {
 	box-shadow: 10px 0px 10px grey;
 	margin-top: 3em;
 	z-index: 3;
+	overflow-y: scroll;
+	position: fixed;
 }
 
 /* Mobile */
@@ -158,7 +160,6 @@ h2 {
 
 	#navigation {
 		display: none;
-		position: absolute;
 		animation-name: rollout;
 		animation-duration: .5s;
 		white-space: nowrap;
