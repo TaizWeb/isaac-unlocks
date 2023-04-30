@@ -8,6 +8,7 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 	</head>
 	<body>
+		<div id="navigation">
 		<label for="quality">Quality:</label>
 		<input id="quality" name="quality" min="0" max="4" step="1" value="0" type="range" />
 		<br />
@@ -40,7 +41,8 @@
 		<input id="boss_challenges" name="boss_challenges" type="checkbox" />
 		<label for="boss_challenges">Challenges</label>
 		<br	/>
-
+		</div>
+		<div id="item-view">
 		<div id="popup" class="active"><div id="popup-body" class="active"></div></div>
 		<h2>Items</h2>
 		<hr/>
@@ -51,6 +53,7 @@
 		<h2>Usables</h2>
 		<hr/>
 		<div id="challenges"></div>
+		</div>
 	</body>
 	<script src="index.js"></script>
 </html>

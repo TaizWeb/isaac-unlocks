@@ -123,7 +123,7 @@ let dismissClick = true;
 // If the outside area is clicked, dismiss the entire thing
 popup.addEventListener("click", (event) => {
 	if (dismissClick)
-		popup.className = popupBody.className = popupBody.innerHTML = "";
+		popup.className = popup.style.height = popupBody.className = popupBody.innerHTML = "";
 	else
 		dismissClick = true;
 });
@@ -170,6 +170,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	popupBody.appendChild(itemNode);
 
 	popup.className = popupBody.className = "active";
+	popup.style.height = document.getElementById("item-view").clientHeight + "px";
 }
 
 // renderItems: Clears the current item container and rebuilds it provided the items match the filters in place
