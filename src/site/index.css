@@ -8,6 +8,23 @@ h2 {
 	text-align: center;
 }
 
+body {
+	display: flex;
+}
+
+#navigation {
+	display: flex;
+	flex-direction: column;
+}
+
+#navigation label {
+	display: inline;
+}
+
+#item-view {
+	width: 100%;
+}
+
 /* Each item's parent div */
 .item-container {
 	border-style: solid;
@@ -97,5 +114,9 @@ h2 {
 	#popup-body.active {
 		width: 80%;
 		height: 40%;
+	}
+
+	#navigation {
+		display: none;
 	}
 }

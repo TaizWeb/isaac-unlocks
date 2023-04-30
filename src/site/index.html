@@ -9,38 +9,139 @@
 	</head>
 	<body>
 		<div id="navigation">
-		<label for="quality">Quality:</label>
-		<input id="quality" name="quality" min="0" max="4" step="1" value="0" type="range" />
-		<br />
-		<input id="boss_satan" name="boss_satan" type="checkbox" />
-		<label for="boss_satan">Satan</label>
-		<input id="boss_lamb" name="boss_lamb" type="checkbox" />
-		<label for="boss_lamb">The Lamb</label>
-		<input id="boss_isaac" name="boss_isaac" type="checkbox" />
-		<label for="boss_isaac">Isaac</label>
-		<input id="boss_bluebaby" name="boss_bluebaby" type="checkbox" />
-		<label for="boss_bluebaby">Blue Baby</label>
-		<input id="boss_megasatan" name="boss_megasatan" type="checkbox" />
-		<label for="boss_megasatan">Mega Satan</label>
-		<input id="boss_hush" name="boss_hush" type="checkbox" />
-		<label for="boss_hush">Hush</label>
-		<input id="boss_bossrush" name="boss_bossrush" type="checkbox" />
-		<label for="boss_bossrush">Boss Rush</label>
-		<input id="boss_mother" name="boss_mother" type="checkbox" />
-		<label for="boss_mother">Mother</label>
-		<input id="boss_delirium" name="boss_delirium" type="checkbox" />
-		<label for="boss_delirium">Delirium</label>
-		<input id="boss_greed" name="boss_greed" type="checkbox" />
-		<label for="boss_greed">Greed</label>
-		<input id="boss_greedier" name="boss_greedier" type="checkbox" />
-		<label for="boss_greedier">Greedier</label>
-		<input id="boss_beast" name="boss_beast" type="checkbox" />
-		<label for="boss_beast">The Beast</label>
-		<input id="boss_heart" name="boss_heart" type="checkbox" />
-		<label for="boss_heart">Mom's Heart</label>
-		<input id="boss_challenges" name="boss_challenges" type="checkbox" />
-		<label for="boss_challenges">Challenges</label>
-		<br	/>
+			<label for="quality">Quality:</label>
+			<input id="quality" name="quality" min="0" max="4" step="1" value="0" type="range" />
+			<br />
+			<div id="bosses-wrapper">
+				<h4>Bosses</h4>
+				<div id="boss_satan-wrapper">
+					<input id="boss_satan" name="boss_satan" type="checkbox" />
+					<label for="boss_satan">Satan</label>
+				</div>
+				<div id="boss_lamb-wrapper">
+					<input id="boss_lamb" name="boss_lamb" type="checkbox" />
+					<label for="boss_lamb">The Lamb</label>
+				</div>
+				<div id="boss_isaac-wrapper">
+					<input id="boss_isaac" name="boss_isaac" type="checkbox" />
+					<label for="boss_isaac">Isaac</label>
+				</div>
+				<div id="boss_bluebaby-wrapper">
+					<input id="boss_bluebaby" name="boss_bluebaby" type="checkbox" />
+					<label for="boss_bluebaby">Blue Baby</label>
+				</div>
+				<div id="boss_megasatan-wrapper">
+					<input id="boss_megasatan" name="boss_megasatan" type="checkbox" />
+					<label for="boss_megasatan">Mega Satan</label>
+				</div>
+				<div id="boss_hush-wrapper">
+					<input id="boss_hush" name="boss_hush" type="checkbox" />
+					<label for="boss_hush">Hush</label>
+				</div>
+				<div id="boss_bossrush-wrapper">
+					<input id="boss_bossrush" name="boss_bossrush" type="checkbox" />
+					<label for="boss_bossrush">Boss Rush</label>
+				</div>
+				<div id="boss_mother-wrapper">
+					<input id="boss_mother" name="boss_mother" type="checkbox" />
+					<label for="boss_mother">Mother</label>
+				</div>
+				<div id="boss_delirium-wrapper">
+					<input id="boss_delirium" name="boss_delirium" type="checkbox" />
+					<label for="boss_delirium">Delirium</label>
+				</div>
+				<div id="boss_greed-wrapper">
+					<input id="boss_greed" name="boss_greed" type="checkbox" />
+					<label for="boss_greed">Greed</label>
+				</div>
+				<div id="boss_greedier-wrapper">
+					<input id="boss_greedier" name="boss_greedier" type="checkbox" />
+					<label for="boss_greedier">Greedier</label>
+				</div>
+				<div id="boss_beast-wrapper">
+					<input id="boss_beast" name="boss_beast" type="checkbox" />
+					<label for="boss_beast">The Beast</label>
+				</div>
+				<div id="boss_heart-wrapper">
+					<input id="boss_heart" name="boss_heart" type="checkbox" />
+					<label for="boss_heart">Mom's Heart</label>
+				</div>
+				<div id="boss_challenges-wrapper">
+					<input id="boss_challenges" name="boss_challenges" type="checkbox" />
+					<label for="boss_challenges">Challenges</label>
+				</div>
+			</div>
+			<h4>Characters</h4>
+			<div id="characters-wrapper">
+				<div id="character_isaac-wrapper">
+					<input name="character-select" type="radio" id="character_isaac" value="Isaac">
+					<label for="character_isaac">Isaac</label>
+				</div>
+				<div id="character_maggy-wrapper">
+					<input name="character-select" type="radio" id="character_maggy" value="Isaac">
+					<label for="character_maggy">Magdalene</label>
+				</div>
+				<div id="character_cain-wrapper">
+					<input name="character-select" type="radio" id="character_cain" value="Cain">
+					<label for="character_cain">Cain</label>
+				</div>
+				<div id="character_judas-wrapper">
+					<input name="character-select" type="radio" id="character_judas" value="Isaac">
+					<label for="character_judas">Judas</label>
+				</div>
+				<div id="character_???-wrapper">
+					<input name="character-select" type="radio" id="character_???" value="Isaac">
+					<label for="character_???">???</label>
+				</div>
+				<div id="character_eve-wrapper">
+					<input name="character-select" type="radio" id="character_eve" value="Isaac">
+					<label for="character_eve">Eve</label>
+				</div>
+				<div id="character_samson-wrapper">
+					<input name="character-select" type="radio" id="character_samson" value="Isaac">
+					<label for="character_samson">Samson</label>
+				</div>
+				<div id="character_azazel-wrapper">
+					<input name="character-select" type="radio" id="character_azazel" value="Isaac">
+					<label for="character_azazel">Azazel</label>
+				</div>
+				<div id="character_lazarus-wrapper">
+					<input name="character-select" type="radio" id="character_lazarus" value="Isaac">
+					<label for="character_lazarus">Lazarus</label>
+				</div>
+				<div id="character_eden-wrapper">
+					<input name="character-select" type="radio" id="character_eden" value="Isaac">
+					<label for="character_eden">Eden</label>
+				</div>
+				<div id="character_thelost-wrapper">
+					<input name="character-select" type="radio" id="character_thelost" value="Isaac">
+					<label for="character_thelost">The Lost</label>
+				</div>
+				<div id="character_lilith-wrapper">
+					<input name="character-select" type="radio" id="character_lilith" value="Isaac">
+					<label for="character_lilith">Lilith</label>
+				</div>
+				<div id="character_keeper-wrapper">
+					<input name="character-select" type="radio" id="character_keeper" value="Isaac">
+					<label for="character_keeper">Keeper</label>
+				</div>
+				<div id="character_apollyon-wrapper">
+					<input name="character-select" type="radio" id="character_apollyon" value="Isaac">
+					<label for="character_apollyon">Apollyon</label>
+				</div>
+				<div id="character_forgotten-wrapper">
+					<input name="character-select" type="radio" id="character_forgotten" value="Isaac">
+					<label for="character_forgotten">Forgotten</label>
+				</div>
+				<div id="character_bethany-wrapper">
+					<input name="character-select" type="radio" id="character_bethany" value="Isaac">
+					<label for="character_bethany">Bethany</label>
+				</div>
+				<div id="character_jacobesau-wrapper">
+					<input name="character-select" type="radio" id="character_jacobesau" value="Isaac">
+					<label for="character_jacobesau">Jacob & Esau</label>
+				</div>
+			</div>
 		</div>
 		<div id="item-view">
 		<div id="popup" class=""><div id="popup-body" class=""></div></div>
