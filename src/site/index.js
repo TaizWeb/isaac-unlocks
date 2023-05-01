@@ -9,12 +9,15 @@ const qualityLabel = document.getElementById("quality-label");
 const hamburger = document.getElementById("hamburger-toggle");
 const navigation = document.getElementById("navigation");
 const characterSelect = document.getElementById("characters-wrapper");
+const poolSelect = document.getElementById("pools-wrapper");
 let character = "";
+let pool = "";
 
 // Navigation Buttons
 const bossAll = document.getElementById("boss_all");
 const taintedToggle = document.getElementById("tainted-toggle");
 const characterDeselect = document.getElementById("character-deselect");
+const poolDeselect = document.getElementById("pool-deselect");
 
 let detailsPopup = false;
 const bossClears = {
@@ -77,12 +80,29 @@ characterSelect.addEventListener("click", (event) => {
 	renderItems();
 });
 
+poolSelect.addEventListener("click", (event) => {
+	let pools = document.getElementsByName("pool-select");
+	for (let i=0; i < pools.length; i++)
+		if (pools[i].checked) pool = pools[i].value;
+	renderItems();
+});
+
 characterDeselect.addEventListener("click", (event) => {
 	let characters = document.getElementsByName("character-select");
 	for (let i=0; i < characters.length; i++) {
 		characters[i].checked = false;
 		character = "";
 	}
+	renderItems();
+});
+
+poolDeselect.addEventListener("click", (event) => {
+	let pools = document.getElementsByName("pool-select");
+	for (let i=0; i < pools.length; i++) {
+		pools[i].checked = false;
+		pool = "";
+	}
+	renderItems();
 });
 
 taintedToggle.addEventListener("click", (event) => {
@@ -181,6 +201,10 @@ let popup = document.getElementById("popup");
 let popupBody = document.getElementById("popup-body");
 let dismissClick = true;
 
+function getPools(descStr) {
+	return descStr.split("\nItem Pool:")[1].split("*")[0];
+}
+
 // If the outside area is clicked, dismiss the entire thing
 popup.addEventListener("click", (event) => {
 	if (dismissClick)
@@ -246,7 +270,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 function renderItems() {
 	itemsContainer.innerHTML = "";
 	for (let item in Isaac.actives) {
-		if (checkQuality(item, Isaac.actives) && checkBosses(item, Isaac.actives) && checkCharacter(item, Isaac.actives)) {
+		if (checkQuality(item, Isaac.actives) && checkBosses(item, Isaac.actives) && checkCharacter(item, Isaac.actives) && checkPools(item, Isaac.actives)) {
 			let itemInfo = Isaac.actives[item];
 			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
@@ -283,8 +307,8 @@ function checkCharacter(item, source) {
 	// THIS is why I'm making this. Imagine looking on platinum god for Maggy unlocks and wondering why half of them are missing. Or looking for Isaac and seeing all the boss' unlocks and the character Isaac's unlocks. ornotbeingabletocombinethemheh
 	// I will say props to them on the tag system though, that must've came in clutch before EID released
 	// You're probably really glad you read the sourcecode now, if for nothing else, my snide remarks
-	// Including the following for shits and giggles, although since checkBosses runs first this SHOULD never return false. But you never know with browser compatibility, minifying, or whatever else is done with this code later on
 	if (character == "") return true; // If character isn't selected, return true;
+	// Including the following for shits and giggles, although since checkBosses runs first this SHOULD never return false. But you never know with browser compatibility, minifying, or whatever else is done with this code later on
 	if (source[item].unlock.search("Unlock") < 0) return false;
 	let regexStr = "(with|as) (the )?"; // Should cover the with/as and "The" Lost/Forgotten
 	// Gross? Very. I'm not taking chances.
@@ -327,6 +351,12 @@ function checkBosses(item, source) {
 		}
 	}
 	return false;
+}
+
+function checkPools(item, source) {
+	if (pool == "") return true;
+	if (source[item].unlock.search("Unlock") < 0) return false;
+	return (getPools(source[item].moreDesc).indexOf(pool) != -1);
 }
 
 renderItems();
