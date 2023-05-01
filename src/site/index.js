@@ -108,12 +108,14 @@ poolDeselect.addEventListener("click", (event) => {
 taintedToggle.addEventListener("click", (event) => {
 	let characters = document.getElementsByName("character-select");	
 	for (let i=0; i < characters.length; i++) { // This could be more efficient rather than checking 17 times
-		if (characters[i].value[1] == ".") {
-			characters[i].value = characters[i].value.slice(3);
+		// Remove tainted
+		if (characters[i].value.split(" ")[0] == "Tainted") {
+			characters[i].value = characters[i].value.split("Tainted ")[1];
 			characters[i].labels[0].innerHTML = characters[i].value;
+		// Add tainted
 		} else {
-			characters[i].value = "T. " + characters[i].value;
-			characters[i].labels[0].innerHTML = characters[i].value;
+			characters[i].labels[0].innerHTML = "T. " + characters[i].value;
+			characters[i].value = "Tainted " + characters[i].value;
 		}
 	}
 });
@@ -202,6 +204,8 @@ let popupBody = document.getElementById("popup-body");
 let dismissClick = true;
 
 function getPools(descStr) {
+	let splitStr = descStr.split("\nItem Pool:");
+	if (splitStr[1] == undefined) return "None";
 	return descStr.split("\nItem Pool:")[1].split("*")[0];
 }
 
@@ -237,7 +241,6 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 
 	// Description
 	let descNode = document.createElement("p");
-	descNode.className = "popup-pickup";
 	let _desc = document.createTextNode(moreDesc.split("\nType")[0].split("*, ")[0]); // Removing pools/tags from item
 	descNode.appendChild(_desc);
 	descNode.className = "item-desc";
@@ -245,7 +248,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	// Pools
 	let poolNode = document.createElement("p");
 	poolNode.className = "popup-pools";
-	let _pool = document.createTextNode("Pools: " + moreDesc.split("\nItem Pool:")[1].split("*")[0]); // Removing pools/tags from item
+	let _pool = document.createTextNode("Pools: " +getPools(moreDesc))// moreDesc.split("\nItem Pool:")[1].split("*")[0]); // Removing pools/tags from item
 	poolNode.appendChild(_pool);
 	poolNode.className = "item-pools";
 
