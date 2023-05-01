@@ -315,6 +315,9 @@ function checkBosses(item, source) {
 				case "???":
 					regexStr += "Chest|\\?\\?\\?";
 					break;
+				case "Hush":
+					regexStr += "Hush|Blue Womb";
+					break;
 				default:
 					regexStr += boss;
 			}
