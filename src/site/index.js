@@ -214,9 +214,16 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	// Description
 	let descNode = document.createElement("p");
 	descNode.className = "popup-pickup";
-	let _desc = document.createTextNode(moreDesc);
+	let _desc = document.createTextNode(moreDesc.split("\nType")[0].split("*, ")[0]); // Removing pools/tags from item
 	descNode.appendChild(_desc);
 	descNode.className = "item-desc";
+
+	// Pools
+	let poolNode = document.createElement("p");
+	poolNode.className = "popup-pools";
+	let _pool = document.createTextNode("Pools: " + moreDesc.split("\nItem Pool:")[1].split("*")[0]); // Removing pools/tags from item
+	poolNode.appendChild(_pool);
+	poolNode.className = "item-pools";
 
 	// Unlock
 	let unlockNode = document.createElement("p");
@@ -229,6 +236,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	itemNode.appendChild(descNode);
 	itemNode.appendChild(unlockNode);
 	popupBody.appendChild(itemNode);
+	popupBody.appendChild(poolNode);
 
 	popup.className = popupBody.className = "active";
 	popup.style.height = document.getElementById("item-view").clientHeight + "px";
@@ -276,7 +284,8 @@ function checkCharacter(item, source) {
 	// I will say props to them on the tag system though, that must've came in clutch before EID released
 	// You're probably really glad you read the sourcecode now, if for nothing else, my snide remarks
 	// Including the following for shits and giggles, although since checkBosses runs first this SHOULD never return false. But you never know with browser compatibility, minifying, or whatever else is done with this code later on
-	if (character == "" || source[item].unlock.search("Unlock") < 0) return false;
+	if (character == "") return true; // If character isn't selected, return true;
+	if (source[item].unlock.search("Unlock") < 0) return false;
 	let regexStr = "(with|as) (the )?"; // Should cover the with/as and "The" Lost/Forgotten
 	// Gross? Very. I'm not taking chances.
 	if (character == "Magdalene" || character == "Maggy") regexStr += "Magdalene|Maggy";
