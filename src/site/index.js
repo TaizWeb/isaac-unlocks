@@ -8,6 +8,8 @@ const quality = document.getElementById("quality");
 const qualityLabel = document.getElementById("quality-label");
 const hamburger = document.getElementById("hamburger-toggle");
 const navigation = document.getElementById("navigation");
+const characterSelect = document.getElementById("characters-wrapper");
+let character = "";
 
 // Navigation Buttons
 const bossAll = document.getElementById("boss_all");
@@ -64,10 +66,22 @@ const bossHTMLtoJS = {
 	"boss_challenges": "Challenge"
 }
 
+// Everytime the radio buttons are hit, update the current value
+characterSelect.addEventListener("click", (event) => {
+	// Look, I know I'm writing this exact line in multiple places,
+	// but I fear if it's dynamic it'll hold the "old" values if tainted is toggled
+	// May not, haven't bothered checking
+	let characters = document.getElementsByName("character-select");
+	for (let i=0; i < characters.length; i++)
+		if (characters[i].checked) character = characters[i].value;
+	renderItems();
+});
+
 characterDeselect.addEventListener("click", (event) => {
 	let characters = document.getElementsByName("character-select");
 	for (let i=0; i < characters.length; i++) {
 		characters[i].checked = false;
+		character = "";
 	}
 });
 
@@ -224,7 +238,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 function renderItems() {
 	itemsContainer.innerHTML = "";
 	for (let item in Isaac.actives) {
-		if (checkQuality(item, Isaac.actives) && checkBosses(item, Isaac.actives)) {
+		if (checkQuality(item, Isaac.actives) && checkBosses(item, Isaac.actives) && checkCharacter(item, Isaac.actives)) {
 			let itemInfo = Isaac.actives[item];
 			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
@@ -232,7 +246,7 @@ function renderItems() {
 	// Render trinkets
 	trinketsContainer.innerHTML = "";
 	for (let item in Isaac.trinkets) {
-		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets)) {
+		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets) && checkCharacter(item, Isaac.trinkets)) {
 			let itemInfo = Isaac.trinkets[item];
 			trinketsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
@@ -240,8 +254,10 @@ function renderItems() {
 
 	// Render challenges
 	challengesContainer.innerHTML = "";
+	// This actually isn't an O(n^3) runtime. If checkQuality fails, none of the other checks will run. So I don't feel bad about doing it in this fashion
+	// I will admit, with more planning I would've just brewed up a clever regex statement and saved a lot of code, but whatever, it works.
 	for (let item in Isaac.usables) {
-		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables)) {
+		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables) && checkCharacter(item, Isaac.usables)) {
 			let itemInfo = Isaac.usables[item];
 			challengesContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
@@ -252,6 +268,26 @@ function renderItems() {
 function checkQuality(item, source) {
 	if (source[item].quality == "NA") return false;
 	else return (parseInt(source[item].quality.split(" ")[1]) >= currentQuality)
+}
+
+function checkCharacter(item, source) {
+	// Platinum (oh my fucking) God has done it again and sometimes has Maggy as Magdalene, uses with/as <character> interchangably, ???/Blue baby, and other weird stuff with their dataset.
+	// THIS is why I'm making this. Imagine looking on platinum god for Maggy unlocks and wondering why half of them are missing. Or looking for Isaac and seeing all the boss' unlocks and the character Isaac's unlocks. ornotbeingabletocombinethemheh
+	// I will say props to them on the tag system though, that must've came in clutch before EID released
+	// You're probably really glad you read the sourcecode now, if for nothing else, my snide remarks
+	// Including the following for shits and giggles, although since checkBosses runs first this SHOULD never return false. But you never know with browser compatibility, minifying, or whatever else is done with this code later on
+	if (character == "" || source[item].unlock.search("Unlock") < 0) return false;
+	let regexStr = "(with|as) (the )?"; // Should cover the with/as and "The" Lost/Forgotten
+	// Gross? Very. I'm not taking chances.
+	if (character == "Magdalene" || character == "Maggy") regexStr += "Magdalene|Maggy";
+	else if (character == "???" || character == "Blue Baby") regexStr += "\\?\\?\\?|Blue Baby";
+	else if (character == "Tainted Magdalene" || character == "Tainted Maggy") regexStr += "Tainted Magdalene|Tainted Maggy";
+	else if (character == "Tainted ???" || character == "Tainted Blue Baby") regexStr += "Tainted \\?\\?\\?|Tainted Blue Baby";
+	else regexStr += character;
+
+	let regex = new RegExp(regexStr, "ig"); // Making it lowercase (you already know why)
+	if (source[item].unlock.match(regex) != null) return true; // Return true if found
+	else return false;
 }
 
 // checkBosses: Returns if any of the currently active boss checkboxes are involved in the unlock of $item
