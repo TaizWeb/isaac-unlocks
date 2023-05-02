@@ -45,17 +45,17 @@ h4 {
 	flex-direction: column;
 }
 
-#navigation.open{
+#navigation.open {
 	animation-timing-function: linear;
 	animation-name: rollout;
-	animation-duration: .5s;
+	animation-duration: .2s;
 	white-space: nowrap;
 }
 
 #navigation.close {
 	animation-timing-function: linear;
 	animation-name: rollin;
-	animation-duration: .5s;
+	animation-duration: .2s;
 	white-space: nowrap;
 }
 
@@ -127,6 +127,19 @@ h4 {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
+	animation-timing-function: linear;
+	animation-name: popin;
+	animation-duration: .2s;
+}
+
+#popup.inactive {
+	/* I also HATE repeating code like this, I'm sure if I messed with z-index and opacity I could get around it */
+	animation-timing-function: linear;
+	animation-name: popout; /* Apparently I need a new animation for this due to the old one being 100%'d already and this is the only way to reset it */
+	animation-duration: .2s;
+	position: absolute;
+	display: flex;
+	width: 100%;
 }
 
 #popup-body.active {
@@ -200,10 +213,9 @@ h4 {
 
 #hamburger-toggle span {
 	font-size: 3em;
-	align: center;
+	line-height: 1;
 	user-select: none;
 }
-
 
 /* Mobile */
 @media (min-width: 300px) and (max-width: 500px) {
@@ -216,7 +228,7 @@ h4 {
 	}
 
 	#navigation {
-		/*display: none;*/
+		display: none;
 	}
 }
 
@@ -235,11 +247,35 @@ h4 {
 }
 
 @keyframes rollin {
-	from {max-width: 50%;}
+	from {
+		padding-right: 1em;
+		padding-left: 1em;
+		max-width: 50%;
+	}
 	to {
 		max-width: 0;
 		padding-right: 0;
 		padding-left: 0;
+	}
+}
+
+@keyframes popin {
+	from {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	to {
+		background-color: rgba(0, 0, 0, .9);
+	}
+}
+
+@keyframes popout {
+	from {
+		background-color: rgba(0, 0, 0, .9);
+	}
+
+	to {
+		background-color: rgba(0, 0, 0, 0);
 	}
 }
 

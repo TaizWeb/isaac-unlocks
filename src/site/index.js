@@ -220,10 +220,18 @@ function getPools(descStr) {
 
 // If the outside area is clicked, dismiss the entire thing
 popup.addEventListener("click", (event) => {
-	if (dismissClick)
-		popup.className = popup.style.height = popupBody.className = popupBody.innerHTML = "";
+	if (dismissClick) {
+		popupBody.className = popupBody.innerHTML = "";
+		popup.className = "inactive";
+	}
 	else
 		dismissClick = true;
+});
+
+popup.addEventListener("animationend", (event) => {
+	if (popup.className == "inactive") {
+		popup.style.height = "0px";
+	}
 });
 
 // If the inner is clicked, keep it
