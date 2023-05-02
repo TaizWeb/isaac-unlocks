@@ -23,7 +23,7 @@
 	position: fixed;
 	padding: 1em;
 	padding-bottom: 10em;
-	display: flex;
+	display: none;
 	flex-direction: column;
 }
 
