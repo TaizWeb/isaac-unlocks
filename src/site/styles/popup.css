@@ -1,0 +1,70 @@
+/* Popup */
+#popup.active {
+	width: 100%;
+	background-color: rgba(0, 0, 0, .9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	animation-timing-function: linear;
+	animation-name: popin;
+	animation-duration: .2s;
+}
+
+#popup.inactive {
+	/* I also HATE repeating code like this, I'm sure if I messed with z-index and opacity I could get around it */
+	animation-timing-function: linear;
+	animation-name: popout; /* Apparently I need a new animation for this due to the old one being 100%'d already and this is the only way to reset it */
+	animation-duration: .2s;
+	position: absolute;
+	display: flex;
+	width: 100%;
+}
+
+#popup-body.active {
+	visibility: inherit;
+	height: fit-content;
+	width: 25%;
+	background-color: white;
+	border: .25em solid lightblue;
+	border-radius: 2%;
+	padding: 1.5em;
+	word-wrap: normal;
+	position: fixed;
+	top: 20%;
+}
+
+.popup-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.popup-pickup {
+	text-align: center;
+	font-style: italic;
+}
+
+.item-desc {
+	overflow-y: hidden;
+}
+
+@keyframes popin {
+	from {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	to {
+		background-color: rgba(0, 0, 0, .9);
+	}
+}
+
+@keyframes popout {
+	from {
+		background-color: rgba(0, 0, 0, .9);
+	}
+
+	to {
+		background-color: rgba(0, 0, 0, 0);
+	}
+}
+

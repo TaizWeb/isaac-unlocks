@@ -1,0 +1,80 @@
+/* Animations */
+@keyframes rollout {
+	from {
+		max-width: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	to {
+		max-width: 50%;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+}
+
+@keyframes rollin {
+	from {
+		padding-right: 1em;
+		padding-left: 1em;
+		max-width: 50%;
+	}
+	to {
+		max-width: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.isaac-button {
+	margin-top: 1em;
+	background-color: skyblue;
+	border: 1px solid black;
+	padding: .3em;
+	border-radius: 5px;
+}
+
+.isaac-button:hover {
+	background-color: #87c4dc;
+}
+
+/* Sidebar */
+#navigation {
+	height: calc(100vh - 5em);
+	background-color: skyblue;
+	border-right: 1px solid black;
+	box-shadow: 10px 5px 10px grey;
+	margin-top: 3em;
+	z-index: 3;
+	overflow-y: scroll;
+	position: fixed;
+	padding: 1em;
+	padding-bottom: 10em;
+	display: flex;
+	flex-direction: column;
+}
+
+#navigation.open {
+	animation-timing-function: linear;
+	animation-name: rollout;
+	animation-duration: .2s;
+	white-space: nowrap;
+}
+
+#navigation.close {
+	animation-timing-function: linear;
+	animation-name: rollin;
+	animation-duration: .2s;
+	white-space: nowrap;
+}
+
+#pools-wrapper {
+	margin-bottom: 3em;
+}
+
+#quality-label {
+	font-weight: bold;
+}
+
+#navigation label {
+	display: inline;
+}
