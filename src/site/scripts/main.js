@@ -77,5 +77,9 @@ function renderItems() {
 	}
 }
 
+// Have items display on first load
+bossAll.dispatchEvent(new Event("click", {"bubbles":true}));
+
+// Perform inital render
 renderItems();
 
