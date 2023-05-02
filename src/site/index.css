@@ -40,6 +40,7 @@ h4 {
 	text-align: center;
 }
 
+/* Look, I thought rarity colors would be pretty (and they totally were) */
 .quality-0 {
 	color: black;
 }
@@ -66,6 +67,7 @@ h4 {
 }
 
 /* Item sections */
+/* TODO: Possible consolodate these */
 #item-view {
 	width: 100%;
 	margin-top: 3em;
@@ -81,7 +83,7 @@ h4 {
 	flex-wrap: wrap;
 }
 
-/* TODO: Possible consolodate these */
+/* While I never did anything with this div, I now use it as a spacer so the content isn't too low on the screen */
 #challenges {
 	display: flex;
 	flex-wrap: wrap;

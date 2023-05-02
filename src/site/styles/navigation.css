@@ -1,30 +1,4 @@
-/* Animations */
-@keyframes rollout {
-	from {
-		max-width: 0;
-		padding-right: 0;
-		padding-left: 0;
-	}
-	to {
-		max-width: 50%;
-		padding-right: 1em;
-		padding-left: 1em;
-	}
-}
-
-@keyframes rollin {
-	from {
-		padding-right: 1em;
-		padding-left: 1em;
-		max-width: 50%;
-	}
-	to {
-		max-width: 0;
-		padding-right: 0;
-		padding-left: 0;
-	}
-}
-
+/* The global button style since the default HTML ones are ugly */
 .isaac-button {
 	margin-top: 1em;
 	background-color: skyblue;
@@ -53,6 +27,7 @@
 	flex-direction: column;
 }
 
+/* These basically only exist for the sliding effect, see the animations down bottom */
 #navigation.open {
 	animation-timing-function: linear;
 	animation-name: rollout;
@@ -67,6 +42,7 @@
 	white-space: nowrap;
 }
 
+/* I had a weird bug where it couldn't scroll all the way down, so I just pushed the content up lol */
 #pools-wrapper {
 	margin-bottom: 3em;
 }
@@ -78,3 +54,31 @@
 #navigation label {
 	display: inline;
 }
+
+/* Animations */
+@keyframes rollout {
+	from {
+		max-width: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	to {
+		max-width: 50%;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+}
+
+@keyframes rollin {
+	from {
+		padding-right: 1em;
+		padding-left: 1em;
+		max-width: 50%;
+	}
+	to {
+		max-width: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+

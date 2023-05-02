@@ -1,4 +1,5 @@
 /* Popup */
+/* Popup has an .active and .inactive so I can animate it. Otherwise I could've just used one */
 #popup.active {
 	width: 100%;
 	background-color: rgba(0, 0, 0, .9);
@@ -21,6 +22,7 @@
 	width: 100%;
 }
 
+/* The inner part of the popup with the text inside it */
 #popup-body.active {
 	visibility: inherit;
 	height: fit-content;
@@ -48,6 +50,8 @@
 	overflow-y: hidden;
 }
 
+/* Animations, right now all these do is that crisp fadein/out effect for the popup */
+/* May add something so the body slides open */
 @keyframes popin {
 	from {
 		background-color: rgba(0, 0, 0, 0);
