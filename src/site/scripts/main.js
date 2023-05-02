@@ -60,7 +60,7 @@ function renderItems() {
 	// Render trinkets
 	trinketsContainer.innerHTML = "";
 	for (let item in Isaac.trinkets) {
-		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets) && checkCharacter(item, Isaac.trinkets) && checkPools(item, Isaac.actives)) {
+		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets) && checkCharacter(item, Isaac.trinkets) && checkPools(item, Isaac.trinkets)) {
 			let itemInfo = Isaac.trinkets[item];
 			trinketsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
@@ -70,7 +70,7 @@ function renderItems() {
 	// I will admit, with more planning I would've just brewed up a clever regex statement and saved a lot of code, but whatever, it works.
 	challengesContainer.innerHTML = "";
 	for (let item in Isaac.usables) {
-		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables) && checkCharacter(item, Isaac.usables) && checkPools(item, Isaac.actives)) {
+		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables) && checkCharacter(item, Isaac.usables) && checkPools(item, Isaac.usables)) {
 			let itemInfo = Isaac.usables[item];
 			challengesContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
