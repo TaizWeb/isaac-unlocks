@@ -1,10 +1,10 @@
-let detailsPopup = false;
-
 // Popup code
 let popup = document.getElementById("popup");
 let popupBody = document.getElementById("popup-body");
 let dismissClick = true;
+let detailsPopup = false;
 
+// getPools: Tear apart the description to remove the pools. If it doesn't have them, say so
 function getPools(descStr) {
 	let splitStr = descStr.split("\nItem Pool:");
 	if (splitStr[1] == undefined) return "None";
@@ -21,6 +21,7 @@ popup.addEventListener("click", (event) => {
 		dismissClick = true;
 });
 
+// Actually removing the popup but only when the css animation is done. See styles/popup.css
 popup.addEventListener("animationend", (event) => {
 	if (popup.className == "inactive") {
 		popup.style.height = "0px";
@@ -32,6 +33,7 @@ popupBody.addEventListener("click", (event) => {
 	dismissClick = false;
 });
 
+// Create the HTML to hold the popup's text and body
 function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	popupBody.innerHTML = "";
 	// I was going to just "re-use" the itemBuilder, but there would be too many problems with stuff like CSS conflicts and frankly it'd be easier to just re-make it
@@ -57,8 +59,7 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 
 	// Pools
 	let poolNode = document.createElement("p");
-	poolNode.className = "popup-pools";
-	let _pool = document.createTextNode("Pools: " + getPools(moreDesc))// moreDesc.split("\nItem Pool:")[1].split("*")[0]); // Removing pools/tags from item
+	let _pool = document.createTextNode("Pools: " + getPools(moreDesc));
 	poolNode.appendChild(_pool);
 	poolNode.className = "item-pools";
 
@@ -78,3 +79,4 @@ function renderDetails(name, itemid, pickup, quality, moreDesc, unlock) {
 	popup.className = popupBody.className = "active";
 	popup.style.height = document.getElementById("item-view").clientHeight + "px";
 }
+

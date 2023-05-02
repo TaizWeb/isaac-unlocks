@@ -7,12 +7,14 @@ const challengesContainer = document.getElementById("challenges");
 function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	let itemNode = document.createElement("div");
 	itemNode.className = "item-container";
+
 	// Name
 	let nameNode = document.createElement("p");
 	nameNode.className = "item-title";
 	let _name = document.createTextNode(name);
 	nameNode.appendChild(_name);
 
+	// Quality
 	let qualityNode = document.createElement("p");
 	qualityNode.className = "item-quality quality-" + quality.split(" ")[1];
 	let _quality = document.createTextNode("[" + quality + "]");
@@ -24,13 +26,6 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	let _pickup = document.createTextNode(pickup);
 	pickupNode.appendChild(_pickup);
 
-	// Description
-	/*let descNode = document.createElement("p");
-	let _desc = document.createTextNode(moreDesc);
-	descNode.appendChild(_desc);
-	descNode.className = "item-desc";
-	*/
-
 	// Unlock
 	let unlockNode = document.createElement("p");
 	let _unlock = document.createTextNode(unlock);
@@ -40,7 +35,6 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 	itemNode.appendChild(nameNode);
 	itemNode.appendChild(qualityNode);
 	itemNode.appendChild(pickupNode);
-	//itemNode.appendChild(descNode);
 	itemNode.appendChild(unlockNode);
 
 	itemNode.addEventListener("click", (event) => {
@@ -52,13 +46,17 @@ function itemBuilder(name, itemid, pickup, quality, moreDesc, unlock) {
 
 // renderItems: Clears the current item container and rebuilds it provided the items match the filters in place
 function renderItems() {
+	// Clear it out before rendering the new item list
 	itemsContainer.innerHTML = "";
+
+	// Render actives
 	for (let item in Isaac.actives) {
 		if (checkQuality(item, Isaac.actives) && checkBosses(item, Isaac.actives) && checkCharacter(item, Isaac.actives) && checkPools(item, Isaac.actives)) {
 			let itemInfo = Isaac.actives[item];
 			itemsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
 	}
+
 	// Render trinkets
 	trinketsContainer.innerHTML = "";
 	for (let item in Isaac.trinkets) {
@@ -68,8 +66,6 @@ function renderItems() {
 		}
 	}
 
-	// Render challenges
-	challengesContainer.innerHTML = "";
 	// This actually isn't an O(n^3) runtime. If checkQuality fails, none of the other checks will run. So I don't feel bad about doing it in this fashion
 	// I will admit, with more planning I would've just brewed up a clever regex statement and saved a lot of code, but whatever, it works.
 	for (let item in Isaac.usables) {

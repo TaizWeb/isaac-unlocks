@@ -4,6 +4,7 @@ function checkQuality(item, source) {
 	else return (parseInt(source[item].quality.split(" ")[1]) >= currentQuality)
 }
 
+// checkCharacter: returns true if the character is in the item's description via regex magic
 function checkCharacter(item, source) {
 	// Platinum (oh my fucking) God has done it again and sometimes has Maggy as Magdalene, uses with/as <character> interchangably, ???/Blue baby, and other weird stuff with their dataset.
 	// THIS is why I'm making this. Imagine looking on platinum god for Maggy unlocks and wondering why half of them are missing. Or looking for Isaac and seeing all the boss' unlocks and the character Isaac's unlocks. ornotbeingabletocombinethemheh
@@ -55,6 +56,7 @@ function checkBosses(item, source) {
 	return false;
 }
 
+// checkPools: Returns true if the item is involved in any pools
 function checkPools(item, source) {
 	if (pool == "") return true;
 	if (source[item].unlock.search("Unlock") < 0) return false;

@@ -1,4 +1,5 @@
 // I don't want to talk about it.
+// But basically this let me avoid making 13 different event listeners that do the same thing
 const bossClears = {
 	"clearSatan": document.getElementById("boss_satan"),
 	"clearLamb": document.getElementById("boss_lamb"),
@@ -59,6 +60,7 @@ const characterSelect = document.getElementById("characters-wrapper");
 const poolSelect = document.getElementById("pools-wrapper");
 let character = "";
 let pool = "";
+let currentQuality = 0;
 
 // Everytime the radio buttons are hit, update the current value
 characterSelect.addEventListener("click", (event) => {
@@ -71,6 +73,7 @@ characterSelect.addEventListener("click", (event) => {
 	renderItems();
 });
 
+// Same as characterSelect
 poolSelect.addEventListener("click", (event) => {
 	let pools = document.getElementsByName("pool-select");
 	for (let i=0; i < pools.length; i++)
@@ -78,32 +81,31 @@ poolSelect.addEventListener("click", (event) => {
 	renderItems();
 });
 
+// Swap between open/close on click
 hamburger.addEventListener("click", (event) => {
 	if (navigation.className == "open") {
 		navigation.className = "close";
 	}
 	else {
-		//navigation.style.display = "flex";
 		navigation.style.display = "flex";
 		navigation.className = "open";
 	}
 });
 
+// Finish getting rid of it at the end of it's css animation (see styles/navbar.css)
 navigation.addEventListener("animationend", (event) => {
 	if (navigation.className == "close")
 		navigation.style.display = "none";
 });
 
-let currentQuality = 0;
-
-// Quality filter
+// Quality filter. On change, update the items
 quality.addEventListener("change", (event) => {
 	currentQuality = event.target.value;
 	qualityLabel.innerHTML = "Quality (" + currentQuality + "+)";
 	renderItems();
 });
 
-// Adding a listener for every boss checkbox
+// Adding a listener for every boss checkbox (see? That monstrosity up top was *totally* worth it)
 for (let _boss in bossClears) {
 	bossClears[_boss].addEventListener("change", (event) => {
 		currentBoss[bossHTMLtoJS[bossClears[_boss].name]] = event.target.checked;
