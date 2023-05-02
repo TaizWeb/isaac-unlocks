@@ -6,5 +6,5 @@ uglifyjs ../lib/isaac.js ../scripts/buttons.js ../scripts/filters.js ../scripts/
 # CSS Uglifier, same as above
 # Installation: npm install uglifycss -g
 # Repo: https://github.com/fmarcia/uglifycss
-uglifycss --ugly-comments ../styles/main.css ../styles/navbar.css ../styles/navigation.css ../styles/popup.css > min.css
+uglifycss --ugly-comments ../styles/navbar.css ../styles/navigation.css ../styles/popup.css ../styles/main.css > min.css
 
