@@ -7,15 +7,17 @@
 		<link rel="stylesheet" href="styles/navbar.css"/>
 		<link rel="stylesheet" href="styles/popup.css"/>
 		<link rel="stylesheet" href="index.css"/>
-		<script src="isaac.js"></script>
+		<script src="isaac.js"></script> <!-- The big 'ol dataset -->
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 	</head>
 	<body>
+		<!-- Killburn came to my house, ate all my food, and said this was the canon ending to BOI: https://www.youtube.com/watch?v=Io9vS-Bb4Rs -->
 		<div id="topbar">
 			<div id="hamburger-toggle"><span>&#8803;</span></div>
 			<h3>Binding of Isaac: Unlock Guide</h3>
 		</div>
 		<div id="main-content">
+			<!-- The sidebar that opens when the hamburger menu is -->
 			<div id="navigation">
 				<label for="quality" id="quality-label">Quality (0+)</label>
 				<input id="quality" name="quality" min="0" max="4" step="1" value="0" type="range" />
@@ -184,6 +186,7 @@
 					<a href="https://github.com/taizweb/isaac-unlocks">View sourcecode on Github</a>
 				</div>
 			</div>
+			<!-- The main view where all the item cards show up -->
 			<div id="item-view">
 				<div id="popup" class=""><div id="popup-body" class=""></div></div>
 				<h2>Items</h2>
@@ -198,6 +201,7 @@
 			</div>
 		</div>
 	</body>
+	<!-- Since this is a DOM-heavy site, scripts are loaded last and in a non-conflicting order -->
 	<script src="scripts/buttons.js"></script>
 	<script src="scripts/filters.js"></script>
 	<script src="scripts/popup.js"></script>
