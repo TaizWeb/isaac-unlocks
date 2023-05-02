@@ -9,6 +9,22 @@ h2 {
 	text-align: center; /* May move this to a class later */
 }
 
+h4 {
+	margin: 1em 0em 1em 0em;
+}
+
+.isaac-button {
+	margin-top: 1em;
+	background-color: skyblue;
+	border: 1px solid black;
+	padding: .3em;
+	border-radius: 5px;
+}
+
+.isaac-button:hover {
+	background-color: #87c4dc;
+}
+
 #main-content {
 	display: flex;
 }
@@ -24,8 +40,27 @@ h2 {
 	overflow-y: scroll;
 	position: fixed;
 	padding: 1em;
+	padding-bottom: 10em;
 	display: flex;
 	flex-direction: column;
+}
+
+#navigation.open{
+	animation-timing-function: linear;
+	animation-name: rollout;
+	animation-duration: .5s;
+	white-space: nowrap;
+}
+
+#navigation.close {
+	animation-timing-function: linear;
+	animation-name: rollin;
+	animation-duration: .5s;
+	white-space: nowrap;
+}
+
+#pools-wrapper {
+	margin-bottom: 3em;
 }
 
 #quality-label {
@@ -181,21 +216,30 @@ h2 {
 	}
 
 	#navigation {
-		display: none;
-		animation-name: rollout;
-		animation-duration: .5s;
-		white-space: nowrap;
+		/*display: none;*/
 	}
 }
 
 /* Animations */
 @keyframes rollout {
-	from {max-width: 0;}
-	to {max-width: 50%;}
+	from {
+		max-width: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	to {
+		max-width: 50%;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
 }
 
 @keyframes rollin {
-	to {max-width: 0;}
 	from {max-width: 50%;}
+	to {
+		max-width: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 

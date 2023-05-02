@@ -121,10 +121,19 @@ taintedToggle.addEventListener("click", (event) => {
 });
 
 hamburger.addEventListener("click", (event) => {
-	if (navigation.style.display == "flex")
-		navigation.style.display = "none";
-	else
+	if (navigation.className == "open") {
+		navigation.className = "close";
+	}
+	else {
+		//navigation.style.display = "flex";
 		navigation.style.display = "flex";
+		navigation.className = "open";
+	}
+});
+
+navigation.addEventListener("animationend", (event) => {
+	if (navigation.className == "close")
+		navigation.style.display = "none";
 });
 
 bossAll.addEventListener("click", (event) => {
