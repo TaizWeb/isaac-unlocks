@@ -3,6 +3,8 @@ Ever wonder what unlock to go for next in The Binding of Isaac? Look [no further
 
 ## Screenshots
 ![View of the interface](https://raw.githubusercontent.com/TaizWeb/isaac-unlocks/master/screenshots/normal-view.png?raw=true)
+
+
 ![View of the navigation](https://raw.githubusercontent.com/TaizWeb/isaac-unlocks/master/screenshots/navigation-view.png?raw=true)
 
 ## Features
