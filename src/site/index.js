@@ -60,7 +60,7 @@ function renderItems() {
 	// Render trinkets
 	trinketsContainer.innerHTML = "";
 	for (let item in Isaac.trinkets) {
-		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets) && checkCharacter(item, Isaac.trinkets)) {
+		if (checkQuality(item, Isaac.trinkets) && checkBosses(item, Isaac.trinkets) && checkCharacter(item, Isaac.trinkets) && checkPools(item, Isaac.actives)) {
 			let itemInfo = Isaac.trinkets[item];
 			trinketsContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
@@ -68,8 +68,9 @@ function renderItems() {
 
 	// This actually isn't an O(n^3) runtime. If checkQuality fails, none of the other checks will run. So I don't feel bad about doing it in this fashion
 	// I will admit, with more planning I would've just brewed up a clever regex statement and saved a lot of code, but whatever, it works.
+	challengesContainer.innerHTML = "";
 	for (let item in Isaac.usables) {
-		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables) && checkCharacter(item, Isaac.usables)) {
+		if (checkQuality(item, Isaac.usables) && checkBosses(item, Isaac.usables) && checkCharacter(item, Isaac.usables) && checkPools(item, Isaac.actives)) {
 			let itemInfo = Isaac.usables[item];
 			challengesContainer.appendChild(itemBuilder(itemInfo.name, "",itemInfo.pickup,itemInfo.quality,itemInfo.moreDesc,itemInfo.unlock));
 		}
